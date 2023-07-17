@@ -32,6 +32,7 @@ namespace Gameplay.Placement {
 				bool canPlace=commandData.CanPlace(index);
 
 				commandData.DoPreview(GridObject.instance.GetGridPosition(index),canPlace);
+				//commandData.DoPreview(mouseOverPosition,canPlace);
 
 				if(Input.GetMouseButtonDown(0)&&canPlace) {
 					var targetElement = GridObject.instance.GetElement(mouseOverPosition);
