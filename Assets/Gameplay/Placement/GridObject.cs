@@ -7,8 +7,8 @@ namespace Gameplay.Placement {
 
 	public class GridObject:MonoBehaviour {
 
-		[SerializeField] Vector2Int size;
-		[SerializeField] float spacing;
+		[field: SerializeField] public Vector2Int size { get; private set; }
+		[field: SerializeField] public float spacing { get; private set; }
 		[SerializeField] Vector3 startPositionOffset;
 		[SerializeField] Renderer gridRenderer;
 
@@ -68,6 +68,8 @@ namespace Gameplay.Placement {
 		}
 
 		public GridElement GetElement(Vector2Int index) {
+			if(IsIndexOOB(index)) return null;
+
 			if(datas[index.x,index.y]==null) {
 				datas[index.x,index.y]=new GridElement();
 				datas[index.x,index.y].Init(index);
@@ -77,14 +79,16 @@ namespace Gameplay.Placement {
 
 		public GridElement GetElement(Vector3 position) => GetElement(GetGridIndex(position));
 
+		public bool IsIndexOOB(Vector2Int index) => index.x>=size.x||index.y>=size.y||index.x<0||index.y<0;
+
 	}
 
 	public class GridElement {
 
 		public Vector2Int selfIndex { get; private set; }
 		public CommandData currentCommand { get; private set; }
-		public GameObject placedObject { get; private set; }
-		public PlacedObjectController placedController { get; private set; }
+		public PlacedObjectController placedObjectController { get; private set; }
+		public PlacedObjectController placedTileController { get; private set; }
 		public float timeAfterCommand { get; private set; }
 
 		public void Init(Vector2Int index) {
@@ -95,12 +99,21 @@ namespace Gameplay.Placement {
 			timeAfterCommand=0;
 		}
 		public void PlaceObject(GameObject prefab) {
-			GameObject gameObject = Object.Instantiate(prefab,GridObject.instance.GetGridPosition(selfIndex),Quaternion.identity,GridObject.instance.transform);
-			placedObject=gameObject;
-			if(gameObject==null) placedController=null;
+			if(placedObjectController) Object.Destroy(placedObjectController.gameObject);
+			if(prefab==null) placedObjectController=null;
 			else {
-				placedController=gameObject.GetComponent<PlacedObjectController>();
-				placedController.Init(this,prefab);
+				GameObject gameObject = Object.Instantiate(prefab,GridObject.instance.GetGridPosition(selfIndex),Quaternion.identity,GridObject.instance.transform);
+				placedObjectController=gameObject.GetComponent<PlacedObjectController>();
+				placedObjectController.Init(this,prefab);
+			}
+		}
+		public void PlaceTile(GameObject prefab) {
+			if(placedTileController) Object.Destroy(placedTileController.gameObject);
+			if(prefab==null) placedTileController=null;
+			else {
+				GameObject gameObject = Object.Instantiate(prefab,GridObject.instance.GetGridPosition(selfIndex),Quaternion.identity,GridObject.instance.transform);
+				placedTileController=gameObject.GetComponent<PlacedObjectController>();
+				placedTileController.Init(this,prefab);
 			}
 		}
 		public void ClearCommand() {
