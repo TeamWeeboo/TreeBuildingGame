@@ -7,9 +7,10 @@ namespace Gameplay.Placement {
 
 	public class GridObject:MonoBehaviour {
 
-		[SerializeField] int size;
+		[SerializeField] Vector2Int size;
 		[SerializeField] float spacing;
 		[SerializeField] Vector3 startPositionOffset;
+		[SerializeField] Renderer gridRenderer;
 
 		public static GridObject instance;
 
@@ -17,7 +18,9 @@ namespace Gameplay.Placement {
 
 		private void Start() {
 			instance=this;
-			datas=new GridElement[size,size];
+			datas=new GridElement[size.x,size.y];
+			gridRenderer.material.mainTextureScale=new Vector2(1,1);
+			UpdateGridRenderer();
 		}
 		private void FixedUpdate() {
 			for(int i = 0;i<datas.GetLength(0);i++)
@@ -25,20 +28,30 @@ namespace Gameplay.Placement {
 					if(datas[i,j]==null) continue;
 					datas[i,j].Update();
 				}
+		}
+		private void OnValidate() {
+			UpdateGridRenderer();
+		}
 
+		void UpdateGridRenderer() {
+			gridRenderer.sharedMaterial.mainTextureScale=new Vector2(size.x+1f,size.y+1f);
+			gridRenderer.transform.localScale=new Vector3(spacing*(size.x+1),spacing*(size.y+1),1);
+			gridRenderer.transform.localPosition=startPositionOffset+new Vector3(0.5f*spacing*size.x,0.25f,0.5f*spacing*size.y);
 		}
 
 		private void OnDrawGizmosSelected() {
 			Gizmos.color=Color.green;
 			Vector3 startPosition = transform.position+startPositionOffset;
-			for(int i = 0;i<size;i++) {
+			for(int i = 0;i<size.x;i++) {
 				Gizmos.DrawLine(
 					startPosition+Vector3.right*i*spacing,
-					startPosition+Vector3.right*i*spacing+Vector3.forward*size*spacing
+					startPosition+Vector3.right*i*spacing+Vector3.forward*size.y*spacing
 				);
+			}
+			for(int i = 0;i<size.y;i++) {
 				Gizmos.DrawLine(
 					startPosition+Vector3.forward*i*spacing,
-					startPosition+Vector3.forward*i*spacing+Vector3.right*size*spacing
+					startPosition+Vector3.forward*i*spacing+Vector3.right*size.x*spacing
 				);
 			}
 		}
@@ -46,7 +59,7 @@ namespace Gameplay.Placement {
 		public Vector2Int GetGridIndex(Vector3 position) {
 			Vector3 startPosition = transform.position+startPositionOffset;
 			Vector3 deltaPosition = position-startPosition;
-			return new Vector2Int((int)(deltaPosition.x/spacing),(int)(deltaPosition.z/spacing));
+			return new Vector2Int(Mathf.RoundToInt(deltaPosition.x/spacing),Mathf.RoundToInt(deltaPosition.z/spacing));
 		}
 		public Vector3 GetGridPosition(Vector2Int index) {
 			Vector3 startPosition = transform.position+startPositionOffset;

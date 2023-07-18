@@ -48,7 +48,7 @@ namespace Gameplay.Placement {
 				previewController.Init(previewMaterial);
 			}
 			previewController.transform.position=position;
-			previewController.UpdateColor(canPlace ? new Color(1,1,1,0.3f) : new Color(1,0.3f,0.3f,0.3f));
+			previewController.UpdateColor(canPlace ? new Color(1,1,1,0.5f) : new Color(1,0.3f,0.3f,0.5f));
 			previewController.gameObject.SetActive(true);
 		}
 		public override void EndPreview() {

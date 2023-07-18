@@ -11,8 +11,14 @@ public class PlacementPreviewController:MonoBehaviour {
 		materialPrototype=material;
 		var renderers = GetComponentsInChildren<Renderer>();
 		foreach(var i in renderers) {
-			materials.Add(i.material);
-			i.material=new Material(materialPrototype);
+			Material[] materialsHere = i.materials;
+			for(int j = 0;j<materialsHere.Length;j++) {
+				Texture texture = materialsHere[j].mainTexture;
+				materialsHere[j]=new Material(materialPrototype);
+				materialsHere[j].mainTexture=texture;
+				materials.Add(materialsHere[j]);
+			}
+			i.materials=materialsHere;
 			i.shadowCastingMode=UnityEngine.Rendering.ShadowCastingMode.Off;
 		}
 	}
