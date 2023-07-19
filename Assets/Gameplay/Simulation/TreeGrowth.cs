@@ -26,7 +26,7 @@ namespace Gameplay.Simulation {
 			if(stage==0&&timeGrowth>boundData.growthTime) OnGrow();
 		}
 
-		public void OnGrow() {
+		public virtual void OnGrow() {
 			float chance = boundData.survivalChance[placement.boundElement.tileData];
 		}
 
