@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: dffeed679747adf488d1bf8d6290262e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - previewAreaPrefab: {fileID: 2799204760622206865, guid: f93e8fc6d0f595a44aebc77d5aa8639e, type: 3}
+  - tileType: {instanceID: 0}
+  - previewMaterial: {fileID: 2100000, guid: cc95290e604f8114cbfd985605d4600b, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

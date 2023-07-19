@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using YCGU;
+using CULU;
 
-namespace YCGU {
+namespace CULU {
 
 	public delegate void Void();
 	public delegate void EventHandler(object sender);

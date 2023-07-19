@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 7119.0273, g: 6649.71, b: 5824.9536, a: 1}
+  m_IndirectSpecularColor: {r: 7072.66, g: 6601.874, b: 5783.528, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -434,6 +434,24 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
+--- !u!1 &706767329 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1557780386569258537, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
+  m_PrefabInstance: {fileID: 1817099678}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &706767332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706767329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39118d3026821304ba25d4b40fb26f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 0
 --- !u!1 &889265707
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,6 +578,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CameraController
       objectReference: {fileID: 0}
+    - target: {fileID: 2737676546044652797, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
+      propertyPath: commandData
+      value: 
+      objectReference: {fileID: 11400000, guid: 91185deeb4bc41648a00df5689d481ba, type: 2}
     - target: {fileID: 4147591100766670295, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -607,7 +629,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1557780386569258537, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 706767332}
   m_SourcePrefab: {fileID: 100100000, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
 --- !u!1 &1991677733
 GameObject:

@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bc8a969be0cc53498bbc5a725f656cd, type: 3}
-  m_Name: Pillar
+  m_Script: {fileID: 11500000, guid: ccaa00ba24b759d4c806edb78f0d8863, type: 3}
+  m_Name: New Tree Placement Command
   m_EditorClassIdentifier: 
   previewAreaPrefab: {fileID: 2799204760622206865, guid: f93e8fc6d0f595a44aebc77d5aa8639e, type: 3}
-  placementPrefab: {fileID: 4890432468013437215, guid: abdac42f10a99b74287f95d0254ad9fb, type: 3}
+  treeType: {fileID: 11400000, guid: 59b6fb2b2ee34e34e909b024bb796f56, type: 2}
   previewMaterial: {fileID: 2100000, guid: cc95290e604f8114cbfd985605d4600b, type: 2}
-  isTile: 0

@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bc8a969be0cc53498bbc5a725f656cd, type: 3}
-  m_Name: Tile
+  m_Script: {fileID: 11500000, guid: dffeed679747adf488d1bf8d6290262e, type: 3}
+  m_Name: New Placement Option Data
   m_EditorClassIdentifier: 
   previewAreaPrefab: {fileID: 2799204760622206865, guid: f93e8fc6d0f595a44aebc77d5aa8639e, type: 3}
-  placementPrefab: {fileID: 5857013013122259434, guid: 63e7489feb241634f88967ff697bf11c, type: 3}
+  tileType: {fileID: 11400000, guid: f51d17da7591eb64d934f6484d9342ad, type: 2}
   previewMaterial: {fileID: 2100000, guid: cc95290e604f8114cbfd985605d4600b, type: 2}
-  isTile: 1
