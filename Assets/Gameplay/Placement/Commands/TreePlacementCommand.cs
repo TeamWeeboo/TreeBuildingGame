@@ -14,7 +14,7 @@ namespace Gameplay.Placement {
 		public override void UpdateCommand(GridElement instance) {
 			base.UpdateCommand(instance);
 
-			if(instance.placedObjectController==null) instance.PlaceObject(placementPrefab);
+			if(instance.placedObjectController==null) instance.PlaceObject(treeType);
 
 
 			instance.ClearCommand();

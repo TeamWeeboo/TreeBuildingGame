@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -16,8 +17,11 @@ namespace Gameplay.Placement {
 
 		public GridElement[,] datas = null;
 
-		private void Start() {
+		private void Awake() {
 			instance=this;
+		}
+
+		private void Start() {
 			datas=new GridElement[size.x,size.y];
 			gridRenderer.material.mainTextureScale=new Vector2(1,1);
 			UpdateGridRenderer();
@@ -89,8 +93,9 @@ namespace Gameplay.Placement {
 		public CommandData currentCommand { get; private set; }
 		public PlacedObjectController placedObjectController { get; private set; }
 		public PlacedObjectController placedTileController { get; private set; }
+		public TileData tileData { get; private set; }
+		public TreeData treeData { get; private set; }
 		public float timeAfterCommand { get; private set; }
-
 
 		public void Init(Vector2Int index) {
 			selfIndex=index;
@@ -99,7 +104,9 @@ namespace Gameplay.Placement {
 			currentCommand=newCommand;
 			timeAfterCommand=0;
 		}
-		public void PlaceObject(GameObject prefab) {
+		public void PlaceObject(TreeData treeData) {
+			this.treeData=treeData;
+			GameObject prefab = treeData?.prefab;
 			if(placedObjectController) Object.Destroy(placedObjectController.gameObject);
 			if(prefab==null) placedObjectController=null;
 			else {
@@ -108,7 +115,9 @@ namespace Gameplay.Placement {
 				placedObjectController.Init(this,prefab);
 			}
 		}
-		public void PlaceTile(GameObject prefab) {
+		public void PlaceTile(TileData tileData) {
+			this.tileData=tileData;
+			GameObject prefab = tileData?.prefab;
 			if(placedTileController) Object.Destroy(placedTileController.gameObject);
 			if(prefab==null) placedTileController=null;
 			else {

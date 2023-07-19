@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 665bec4e9d59e674eacacb71939839f9, type: 3}
-  m_Name: New Tile Data
+  m_Name: "\u6EE9\u5730"
   m_EditorClassIdentifier: 
-  <prefab>k__BackingField: {fileID: 5857013013122259434, guid: 63e7489feb241634f88967ff697bf11c, type: 3}
+  <prefab>k__BackingField: {fileID: 5857013013122259434, guid: 059472715558f7f42b0109fb57e5dfd0, type: 3}
   <canPlaceOn>k__BackingField: []
   <cost>k__BackingField: 0

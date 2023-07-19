@@ -35,6 +35,9 @@ namespace CULU {
 		IEnumerator<KeyValuePair<TKey,TValue>> IEnumerable<KeyValuePair<TKey,TValue>>.GetEnumerator() {
 			return ((IEnumerable<KeyValuePair<TKey,TValue>>)_value).GetEnumerator();
 		}
+
+		public TValue this[TKey key]=>_value[key];
+
 	}
 
 }

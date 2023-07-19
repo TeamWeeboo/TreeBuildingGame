@@ -506,6 +506,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5293694435440081073, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
+      propertyPath: spreadCoreCountMax
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5293694435440081073, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
+      propertyPath: spreadCoreRadiusRange.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5293694435440081073, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
+      propertyPath: spreadCoreRadiusRange.y
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5293694435440081073, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
+      propertyPath: spreadExtensionCountMax
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5293694435440081073, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
+      propertyPath: spreadExtensionRadiusRange.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5293694435440081073, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
+      propertyPath: spreadExtensionRadiusRange.y
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

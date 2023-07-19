@@ -111,7 +111,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39118d3026821304ba25d4b40fb26f2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 0
+  tileBase: {fileID: 11400000, guid: f51d17da7591eb64d934f6484d9342ad, type: 2}
+  tileBorder: {fileID: 11400000, guid: 59b6fb2b2ee34e34e909b024bb796f56, type: 2}
+  tileSpread: {fileID: 11400000, guid: f19257c42e2d53146ae8c80a95488144, type: 2}
+  borderWidthRange: {x: 4, y: 10}
+  spreadCoreCountMax: 30
+  spreadExtensionCountMax: 90
+  spreadCoreRadiusRange: {x: 10, y: 20}
+  spreadExtensionRadiusRange: {x: 5, y: 14}
+  money: 100
 --- !u!1 &2906140306117019336
 GameObject:
   m_ObjectHideFlags: 0

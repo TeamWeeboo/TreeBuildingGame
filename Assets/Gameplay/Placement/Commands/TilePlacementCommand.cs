@@ -15,7 +15,7 @@ namespace Gameplay.Placement {
 		public override void UpdateCommand(GridElement instance) {
 			base.UpdateCommand(instance);
 
-			if(instance.placedTileController==null) instance.PlaceTile(placementPrefab);
+			if(instance.placedTileController==null) instance.PlaceTile(tileType);
 
 
 			instance.ClearCommand();
