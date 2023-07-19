@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dffeed679747adf488d1bf8d6290262e, type: 3}
-  m_Name: New Placement Option Data
+  m_Script: {fileID: 11500000, guid: ccaa00ba24b759d4c806edb78f0d8863, type: 3}
+  m_Name: "\u5EFA\u9020 \u767D\u6A21\u6811"
   m_EditorClassIdentifier: 
   previewAreaPrefab: {fileID: 2799204760622206865, guid: f93e8fc6d0f595a44aebc77d5aa8639e, type: 3}
-  tileType: {fileID: 11400000, guid: f51d17da7591eb64d934f6484d9342ad, type: 2}
-  previewMaterial: {fileID: 2100000, guid: cc95290e604f8114cbfd985605d4600b, type: 2}
+  _previewMaterial: {fileID: 2100000, guid: cc95290e604f8114cbfd985605d4600b, type: 2}
+  treeType: {fileID: 11400000, guid: 72d9ad90d2e2bff4e9fdec1fc8b6d0d8, type: 2}

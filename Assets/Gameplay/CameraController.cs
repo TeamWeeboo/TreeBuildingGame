@@ -89,9 +89,8 @@ namespace Gameplay {
 			if(Input.GetMouseButton(1)) {
 				Vector3 mousePositionDelta = Input.mousePosition-mouseOverPositionPrevious;
 				float mouseMovementScaling = 1f/camera.pixelHeight;
-				float doReverseYawChange = (Input.mousePosition.y/camera.pixelHeight<0.35f) ? -1 : 1;
 				Debug.Log(Input.mousePosition.y/camera.pixelHeight);
-				yawAngle+=mousePositionDelta.x*mouseRotationSensitivity*mouseMovementScaling*doReverseYawChange;
+				yawAngle+=mousePositionDelta.x*mouseRotationSensitivity*mouseMovementScaling;
 				pitchAngle-=mousePositionDelta.y*mouseRotationSensitivity*mouseMovementScaling;
 			}
 

@@ -6,7 +6,7 @@ namespace Gameplay.Simulation {
 
 	public class TreeGrowth:MonoBehaviour {
 
-		[SerializeField] TreeData boundData;
+		TreeData boundData;
 		[SerializeField] GameObject saplingObject;
 		[SerializeField] GameObject treeObject;
 
@@ -19,6 +19,7 @@ namespace Gameplay.Simulation {
 			placement=GetComponent<PlacedObjectController>();
 			treeObject.SetActive(false);
 			saplingObject.SetActive(true);
+			boundData=placement.boundElement.treeData;
 		}
 
 		private void FixedUpdate() {
@@ -28,6 +29,12 @@ namespace Gameplay.Simulation {
 
 		public virtual void OnGrow() {
 			float chance = boundData.survivalChance[placement.boundElement.tileData];
+			bool doGrow = Random.Range(0f,1f)<chance;
+			if(doGrow) {
+				stage=1;
+				saplingObject.SetActive(false);
+				treeObject.SetActive(true);
+			} else placement.boundElement.PlaceObject(null);
 		}
 
 	}

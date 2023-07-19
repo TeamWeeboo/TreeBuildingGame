@@ -10,13 +10,16 @@ namespace Gameplay.Placement {
 	public class CommandData:ScriptableObject {
 
 		[SerializeField] GameObject previewAreaPrefab;
+		[SerializeField] Material _previewMaterial;
 		public readonly static Dictionary<string,CommandData> datas = new Dictionary<string,CommandData>();
 		protected static GameObject previewAreaDisplay;
 		protected static Material previewAreaMaterial;
+		protected static Material previewMaterial;
 
 		public virtual void UpdateCommand(GridElement instance) { }
 		protected virtual void OnEnable() {
 			datas.Add(name,this);
+			if(_previewMaterial!=null&&previewAreaDisplay==null) previewMaterial=_previewMaterial;
 		}
 		public virtual void DoPreview(Vector2Int start,Vector2Int end,bool doPreview) {
 			foreach(var i in datas) {

@@ -1,6 +1,8 @@
 using Gameplay.Placement;
+using Gameplay.Simulation;
 using System.Collections;
 using System.Collections.Generic;
+using TreeEditor;
 using UnityEngine;
 
 namespace Gameplay.Placement {
@@ -9,7 +11,6 @@ namespace Gameplay.Placement {
 	public class TreePlacementCommand:CommandData {
 		[SerializeField] TreeData treeType;
 		GameObject placementPrefab => treeType.prefab;
-		[SerializeField] Material previewMaterial;
 
 		public override void UpdateCommand(GridElement instance) {
 			base.UpdateCommand(instance);
@@ -26,11 +27,13 @@ namespace Gameplay.Placement {
 			base.DoPreview(start,end,doPreview);
 			bool canPlace = CanPlace(end);
 			Vector3 position = GridObject.instance.GetGridPosition(end);
-			if(previewController==null) {
+			if(previewController==null&&previewMaterial!=null) {
 				GameObject previewObject = Instantiate(placementPrefab);
 				previewController=previewObject.AddComponent<PlacementPreviewController>();
 				previewController.Init(previewMaterial);
-			}
+				Destroy(previewObject.GetComponent<TreeGrowth>());
+				Destroy(previewObject.GetComponent<PlacedObjectController>());
+			} else if(previewController==null) return;
 			previewController.transform.position=position;
 			previewController.UpdateColor(canPlace ? new Color(1,1,1,0.5f) : new Color(1,0.3f,0.3f,0.5f));
 			previewController.gameObject.SetActive(true);
@@ -48,6 +51,13 @@ namespace Gameplay.Placement {
 			if(GridObject.instance.IsIndexOOB(index)) return false;
 			return GridObject.instance.GetElement(index).placedObjectController==null;
 		}
+
+		public static TreePlacementCommand GenerateCommand(TreeData boundData) {
+			TreePlacementCommand result = new TreePlacementCommand();
+			result.treeType=boundData;
+			return result;
+		}
+
 	}
 
 }

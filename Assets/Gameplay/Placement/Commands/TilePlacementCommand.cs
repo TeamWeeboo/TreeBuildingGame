@@ -1,4 +1,5 @@
 using Gameplay.Placement;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +7,8 @@ using UnityEngine;
 
 namespace Gameplay.Placement {
 
-	[CreateAssetMenu(menuName = "自定/放置地面选项")]
+	[Obsolete]
+	//[CreateAssetMenu(menuName = "自定/放置地面选项")]
 	public class PlacementOptionData:CommandData {
 		[SerializeField] TileData tileType;
 		GameObject placementPrefab => tileType.prefab;

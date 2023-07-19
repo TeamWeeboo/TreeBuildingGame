@@ -116,6 +116,7 @@ namespace Gameplay.Placement {
 			}
 		}
 		public void PlaceTile(TileData tileData) {
+			if(tileData==null) return;
 			this.tileData=tileData;
 			GameObject prefab = tileData?.prefab;
 			if(placedTileController) Object.Destroy(placedTileController.gameObject);
