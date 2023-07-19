@@ -91,6 +91,7 @@ namespace Gameplay.Placement {
 		public PlacedObjectController placedTileController { get; private set; }
 		public float timeAfterCommand { get; private set; }
 
+
 		public void Init(Vector2Int index) {
 			selfIndex=index;
 		}
