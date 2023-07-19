@@ -139,7 +139,7 @@ Transform:
   m_Children:
   - {fileID: 5808146398102614051}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!218 &420300843221908943
 Terrain:
@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0205451ac81366408f25d76fe382877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: {x: 100, y: 100}
-  spacing: 10
+  <size>k__BackingField: {x: 100, y: 100}
+  <spacing>k__BackingField: 10
   startPositionOffset: {x: 0, y: 0, z: 0}
   gridRenderer: {fileID: 6390475039456360693}

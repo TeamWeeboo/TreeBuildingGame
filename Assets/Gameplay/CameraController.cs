@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using CULU;
 
 namespace Gameplay {
 
@@ -72,10 +73,10 @@ namespace Gameplay {
 			//cameraDistance+=distanceDelta;
 			//distanceChangePending-=distanceDelta;
 
-			if(Input.mouseScrollDelta.y>0) cameraDistance-=1.5f;
-			if(Input.mouseScrollDelta.y<0) cameraDistance+=1.5f;
+			if(Input.mouseScrollDelta.y>0) cameraDistance-=Mathf.Sqrt(cameraDistance);
+			if(Input.mouseScrollDelta.y<0) cameraDistance+=Mathf.Sqrt(cameraDistance);
 
-			cameraDistance=Mathf.Clamp(cameraDistance,1,100);
+			cameraDistance=Mathf.Clamp(cameraDistance,15,500);
 			cameraTransform.localPosition=Vector3.back*cameraDistance;
 
 		}
@@ -90,7 +91,7 @@ namespace Gameplay {
 				float mouseMovementScaling = 1f/camera.pixelHeight;
 				float doReverseYawChange = (Input.mousePosition.y/camera.pixelHeight<0.35f) ? -1 : 1;
 				Debug.Log(Input.mousePosition.y/camera.pixelHeight);
-				yawAngle-=mousePositionDelta.x*mouseRotationSensitivity*mouseMovementScaling*doReverseYawChange;
+				yawAngle+=mousePositionDelta.x*mouseRotationSensitivity*mouseMovementScaling*doReverseYawChange;
 				pitchAngle-=mousePositionDelta.y*mouseRotationSensitivity*mouseMovementScaling;
 			}
 

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4147591100766670295}
   - component: {fileID: 784480195997580626}
+  - component: {fileID: 5293694435440081073}
   m_Layer: 0
   m_Name: CameraController
   m_TagString: Untagged
@@ -31,7 +32,7 @@ Transform:
   m_Children:
   - {fileID: 2720080523056917128}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &784480195997580626
 MonoBehaviour:
@@ -62,12 +63,12 @@ MonoBehaviour:
       outWeight: 0
     - serializedVersion: 3
       time: 100
-      value: 60
-      inSlope: 1.1395059
-      outSlope: 1.1395059
+      value: 40
+      inSlope: 0.61401653
+      outSlope: 0.61401653
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.07029137
+      inWeight: 0.091174774
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -98,6 +99,19 @@ MonoBehaviour:
     m_RotationOrder: 4
   pitchHinge: {fileID: 2720080523056917128}
   cameraTransform: {fileID: 197031026561898932}
+--- !u!114 &5293694435440081073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557780386569258537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39118d3026821304ba25d4b40fb26f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 0
 --- !u!1 &2906140306117019336
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,7 +347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261df0c37093ca848883afcd8f739222, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  commandData: {fileID: 11400000, guid: e06a49332ee4e7e49b3f566b3a07cd67, type: 2}
+  commandData: {fileID: 11400000, guid: 91185deeb4bc41648a00df5689d481ba, type: 2}
 --- !u!1 &7129896907680953272
 GameObject:
   m_ObjectHideFlags: 0
