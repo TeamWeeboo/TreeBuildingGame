@@ -20,6 +20,7 @@ namespace Gameplay.Simulation {
 			changeTime=Random.Range(changeTimeRange.x,changeTimeRange.y);
 		}
 		private void FixedUpdate() {
+			if(!placement) Destroy(this);
 			timeAfterStart+=Time.deltaTime;
 			if(timeAfterStart>=changeTime) {
 				if(placement.boundElement.tileData==changeFrom)

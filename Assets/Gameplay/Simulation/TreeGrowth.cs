@@ -34,7 +34,7 @@ namespace Gameplay.Simulation {
 			timeGrowth+=Time.deltaTime;
 			if(stage==0&&timeGrowth>boundData.growthTime) OnGrow();
 
-			moneyCumulated+=boundData.economics*Time.deltaTime;
+			if(stage==1) moneyCumulated+=boundData.economics*Time.deltaTime;
 			if(moneyCumulated>1) {
 				Progression.Game.instance.money+=1;
 				moneyCumulated-=1;

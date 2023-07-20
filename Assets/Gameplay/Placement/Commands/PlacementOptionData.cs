@@ -4,6 +4,8 @@ using System.Runtime.InteropServices;
 using UnityEditor;
 using UnityEngine;
 using CULU;
+using Gameplay.Progression;
+using Unity.VisualScripting;
 
 namespace Gameplay.Placement {
 
@@ -43,6 +45,7 @@ namespace Gameplay.Placement {
 				previewAreaDisplay.transform.position=(startPosition+endPosition)*0.5f;
 				previewAreaDisplay.transform.localScale=new Vector3(endPosition.x-startPosition.x,0.3f,endPosition.z-startPosition.z);
 				previewAreaDisplay?.SetActive(!isSingleTile);
+
 				return;
 			}
 
@@ -52,6 +55,27 @@ namespace Gameplay.Placement {
 		}
 
 		public virtual bool CanPlace(Vector2Int index) => false;
+
+		public virtual int cost => 0;
+
+		public bool CanAfford(Vector2 start,Vector2 end) {
+
+			if(start.x>end.x) Utility.Swap(ref start.x,ref end.x);
+			if(start.y>end.y) Utility.Swap(ref start.y,ref end.y);
+			bool canAfford = false;
+			int totalCost = 0;
+			for(int i = (int)start.x;i<=end.x;i+=1)
+				for(int j = (int)start.y;j<=end.y;j+=1) {
+					Vector2Int indexHere = new Vector2Int(i,j);
+					var targetElement = GridObject.instance.GetElement(indexHere);
+					if(targetElement!=null&CanPlace(indexHere)) {
+						totalCost+=cost;
+					}
+				}
+			canAfford=totalCost<=Game.instance.money;
+			return canAfford;
+
+		}
 
 	}
 
