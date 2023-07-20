@@ -17,7 +17,6 @@ namespace Gameplay {
 		[field: SerializeField] public float economics { get; private set; }
 
 		[field: SerializeField] public int[] diseaseThreshold { get; private set; }
-		[field: SerializeField] public bool diseaseSpread { get; private set; }
 		[field: SerializeField] public float diseaseSpreadChance { get; private set; }
 		[field: SerializeField] public float diseaseTime { get; private set; }
 
