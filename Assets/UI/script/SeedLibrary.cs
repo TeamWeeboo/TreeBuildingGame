@@ -26,6 +26,7 @@ public class SeedLibrary : MonoBehaviour
     public TreeData MuSu;
     public TreeData YuMi;
     public TreeData XiangRiKui;
+    public CommandData DeletButton;
 
 
 
@@ -36,6 +37,10 @@ public class SeedLibrary : MonoBehaviour
         Sorts.SetActive(true);
     }
 
+    public void Delet()
+    {
+        PlacementController.instance.commandData = DeletButton;
+    }
     public void Return()
     {
         Library.SetActive(true);
@@ -44,6 +49,7 @@ public class SeedLibrary : MonoBehaviour
         Sort3.SetActive(false);
         Sort4.SetActive(false);
         Sorts.SetActive(false);
+        PlacementController.instance.commandData = null;
     }
 
 

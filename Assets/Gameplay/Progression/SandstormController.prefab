@@ -602,7 +602,7 @@ MonoBehaviour:
   rewardSuccessList: 01000000020000000300000004000000
   rewardFailList: 05000000060000000700000007000000
   sandstormInterval: 10
-  sandstormDuration: 3
+  sandstormDuration: 30
   sandstormVolumes:
   - {fileID: 7924378152419849437}
   - {fileID: 8951772008902466894}
@@ -1316,7 +1316,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: 8b483e237b45f644eb7cbca12e20a98a, type: 2}
+  sharedProfile: {fileID: 11400000, guid: b96923138fa34564fb262193bb97e02f, type: 2}
 --- !u!1 &8229245731254824909
 GameObject:
   m_ObjectHideFlags: 0
