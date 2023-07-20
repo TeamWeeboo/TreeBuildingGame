@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4789248608120923220}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 500, y: 0.25, z: 500}
-  m_LocalScale: {x: 1010, y: 1010, z: 1}
+  m_LocalPosition: {x: 1522.5701, y: 32.95, z: 1569.81}
+  m_LocalScale: {x: 2400, y: 2570, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6132640078219411984}
@@ -139,7 +139,7 @@ Transform:
   m_Children:
   - {fileID: 5808146398102614051}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!218 &420300843221908943
 Terrain:
@@ -150,7 +150,7 @@ Terrain:
   m_GameObject: {fileID: 8384451538870939569}
   m_Enabled: 1
   serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: a502ffec4a059ba41bf4727b02a042d8, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: fa7a114b664006b40b701770182bb1d2, type: 2}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
@@ -158,24 +158,24 @@ Terrain:
   m_DetailObjectDistance: 80
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 5
-  m_SplatMapDistance: 1000
+  m_SplatMapDistance: 1024
   m_HeightmapMaximumLOD: 0
   m_ShadowCastingMode: 2
   m_DrawHeightmap: 1
-  m_DrawInstanced: 0
+  m_DrawInstanced: 1
   m_DrawTreesAndFoliage: 1
   m_StaticShadowCaster: 0
   m_IgnoreQualitySettings: 0
   m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 2100000, guid: 22ff8771d87ef27429e670136399094b, type: 2}
+  m_MaterialTemplate: {fileID: 2100000, guid: 121d238af1d4054499aad46b0d0a11dc, type: 2}
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
   m_ReceiveGI: 1
-  m_ScaleInLightmap: 0.0256
+  m_ScaleInLightmap: 0.8
   m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
   m_GroupingID: 0
-  m_RenderingLayerMask: 257
+  m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
@@ -198,7 +198,7 @@ TerrainCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_TerrainData: {fileID: 15600000, guid: a502ffec4a059ba41bf4727b02a042d8, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: fa7a114b664006b40b701770182bb1d2, type: 2}
   m_EnableTreeColliders: 1
 --- !u!114 &8550183955678392613
 MonoBehaviour:
@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0205451ac81366408f25d76fe382877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <size>k__BackingField: {x: 100, y: 100}
+  <size>k__BackingField: {x: 239, y: 256}
   <spacing>k__BackingField: 10
-  startPositionOffset: {x: 0, y: 0, z: 0}
+  startPositionOffset: {x: 327.57, y: 32.7, z: 289.81}
   gridRenderer: {fileID: 6390475039456360693}
