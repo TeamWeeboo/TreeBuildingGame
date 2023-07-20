@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 4748.6763, g: 3245.2183, b: 2468.256, a: 1}
+  m_IndirectSpecularColor: {r: 4749.478, g: 3245.766, b: 2468.508, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -86102,42 +86102,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 463997031255590779, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 858266118601109593, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 870660116058394126, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 677b8ee2b8dadc34ebc5192d8afb0770, type: 3}
     - target: {fileID: 2298635828992289317, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
       propertyPath: m_Name
       value: SandstormController
       objectReference: {fileID: 0}
-    - target: {fileID: 2298635828992289317, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: m_IsActive
+    - target: {fileID: 2416944839131318623, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6574867b482fc51479d804313cfa9074, type: 3}
+    - target: {fileID: 3064767413713930099, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d865319992fc4114aaab6e2662aed0ab, type: 3}
+    - target: {fileID: 3064767413713930099, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3756517564479384128, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: sharedProfile
+    - target: {fileID: 4756519982156683705, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
+      propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 11400000, guid: 609a6942c51239644bfe9b7c3d149178, type: 2}
-    - target: {fileID: 6021058906226671825, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: sharedProfile
-      value: 
-      objectReference: {fileID: 11400000, guid: fcb38471bf3b34944a5242d8d051bb01, type: 2}
-    - target: {fileID: 7924378152419849437, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8346189298357967611, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: sharedProfile
-      value: 
-      objectReference: {fileID: 11400000, guid: a0a21ae6456f1ce4084e742ed7af278f, type: 2}
-    - target: {fileID: 8951772008902466894, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 2f372a85f84007b4b9d92767179c5954, type: 3}
     - target: {fileID: 9176913080226733561, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
       propertyPath: m_RootOrder
       value: 6
