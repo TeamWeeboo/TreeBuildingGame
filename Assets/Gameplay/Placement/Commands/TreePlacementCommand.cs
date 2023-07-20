@@ -57,7 +57,7 @@ namespace Gameplay.Placement {
 
 		public static TreePlacementCommand GenerateCommand(TreeData boundData) {
 			TreePlacementCommand result = new TreePlacementCommand();
-			result.treeType=boundData;
+			result.treeType = boundData;
 			return result;
 		}
 
