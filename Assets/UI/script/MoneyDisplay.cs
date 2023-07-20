@@ -6,8 +6,8 @@ using Gameplay.Placement;
 using Gameplay.Progression;
 
 public class MoneyDisplay:MonoBehaviour {
-	TextMeshProUGUI textMoney;
-	TextMeshProUGUI textCost;
+	[SerializeField] TextMeshProUGUI textMoney;
+	[SerializeField] TextMeshProUGUI textCost;
 
 	private void Update() {
 		textCost.text=$"»¨·Ñ {PlacementController.instance.commandData.cost}";

@@ -6,13 +6,13 @@ using Gameplay.Placement;
 using Gameplay.Progression;
 using Gameplay;
 
-public class RatioBar : MonoBehaviour
-{
-    public Slider slider;
+public class RatioBar:MonoBehaviour {
+	public Slider slider;
 
-    // Update is called once per frame
-    public void setRatioBar()
-    {
-        slider.value = 
-    }
+
+	// Update is called once per frame
+	void Update() {
+		PlacementController.instance.fillRatio=slider.value;
+		if(PlacementController.instance.fillRatio<0.1f) PlacementController.instance.fillRatio=0.1f;
+	}
 }

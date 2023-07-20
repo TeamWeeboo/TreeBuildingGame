@@ -57,6 +57,7 @@ namespace Gameplay.Placement {
 									fillT+=Random.Range(fillRatio*0.5f,fillRatio*1.5f);
 									if(fillT<=0) continue;
 									fillT-=1;
+									Game.instance.money-=commandData.cost;
 									targetElement.AddCommand(commandData);
 								}
 							}
