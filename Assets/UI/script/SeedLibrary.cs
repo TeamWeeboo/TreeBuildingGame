@@ -4,6 +4,7 @@ using UnityEngine;
 using Gameplay.Placement;
 using Gameplay.Progression;
 using Gameplay;
+using Unity.VisualScripting;
 
 public class SeedLibrary : MonoBehaviour
 {
@@ -14,8 +15,17 @@ public class SeedLibrary : MonoBehaviour
     public GameObject Sort4;
     public GameObject Sorts;
     public GameObject Library;
-    public TreeData treedata;
-    public GameObject Tree1;
+    public TreeData BaiYang;
+    public TreeData HanLiu;
+    public TreeData ZhangZiSong;
+    public TreeData PingGuoShu;
+    public TreeData YouHao;
+    public TreeData ShaLiu;
+    public TreeData GuaiLiu;
+    public TreeData JiJICao;
+    public TreeData MuSu;
+    public TreeData YuMi;
+    public TreeData XiangRiKui;
 
 
 
@@ -35,11 +45,7 @@ public class SeedLibrary : MonoBehaviour
         Sort4.SetActive(false);
         Sorts.SetActive(false);
     }
-    public void SeedSelet()
-    {
-        TreePlacementCommand myCommand = treedata.command;
-        PlacementController.instance.commandData = myCommand;
-    }
+
 
     public void SeedSort1()
     {
@@ -69,5 +75,52 @@ public class SeedLibrary : MonoBehaviour
         Sort2.SetActive(false);
         Sort3.SetActive(false);
         Sort4.SetActive(true);
+    }
+
+    public void SeedSeletBaiYang()
+    {
+        PlacementController.instance.commandData = BaiYang.command;
+    }
+
+    public void SeedSeletHanLiu()
+    {
+        PlacementController.instance.commandData = HanLiu.command;
+    }
+    public void SeedSeletZhangZiSong()
+    {
+        PlacementController.instance.commandData = ZhangZiSong.command;
+    }
+    public void SeedSeletPingGuoShu()
+    {
+        PlacementController.instance.commandData = PingGuoShu.command;
+    }
+    public void SeedSeletYouHao()
+    {
+        PlacementController.instance.commandData = YouHao.command;
+    }
+    
+    public void SeedSeletShaLiu()
+    {
+        PlacementController.instance.commandData = ShaLiu.command;
+    }
+    public void SeedSeletGuaiLiu()
+    {
+        PlacementController.instance.commandData = GuaiLiu.command;
+    }
+    public void SeedSeletJiJICao()
+    {
+        PlacementController.instance.commandData = JiJICao.command;
+    }
+    public void SeedSeletMuSu()
+    {
+        PlacementController.instance.commandData = MuSu.command;
+    }
+    public void SeedSeletYuMi()
+    {
+        PlacementController.instance.commandData = YuMi.command;
+    }
+    public void SeedSeletXiangRiKui()
+    {
+        PlacementController.instance.commandData = XiangRiKui.command;
     }
 }
