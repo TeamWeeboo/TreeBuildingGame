@@ -29,7 +29,7 @@ namespace Gameplay.Placement {
 
 			Vector3 mouseOverPosition = cameraController.mouseOverPosition;
 
-			if(mouseOverPosition.y>=0) {
+			if(mouseOverPosition.y>=-9999) {
 
 				Vector2Int index = GridObject.instance.GetGridIndex(mouseOverPosition);
 				Vector2 start = startIndex;

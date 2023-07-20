@@ -99,6 +99,8 @@ MonoBehaviour:
     m_RotationOrder: 4
   pitchHinge: {fileID: 2720080523056917128}
   cameraTransform: {fileID: 197031026561898932}
+  minPosition: {x: -1000, y: 0, z: -1000}
+  maxPosition: {x: 1000, y: 0, z: 1000}
 --- !u!114 &5293694435440081073
 MonoBehaviour:
   m_ObjectHideFlags: 0

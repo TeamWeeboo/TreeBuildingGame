@@ -18,6 +18,9 @@ namespace Gameplay {
 		[SerializeField] Transform pitchHinge;
 		[SerializeField] Transform cameraTransform;
 
+		[SerializeField] Vector3 minPosition;
+		[SerializeField] Vector3 maxPosition;
+
 		public Vector3 mouseOverPosition { get; private set; }
 		Vector3 mouseOverPositionDelta;
 		new Camera camera;
@@ -30,12 +33,17 @@ namespace Gameplay {
 			UpdateMouseOver();
 			UpdateMovement();
 			UpdateRotation();
+			Vector3 position = transform.position;
+			position.x=Mathf.Clamp(position.x,minPosition.x,maxPosition.x);
+			position.y=Mathf.Clamp(position.y,minPosition.y,maxPosition.y);
+			position.z=Mathf.Clamp(position.z,minPosition.z,maxPosition.z);
+			transform.position=position;
 
 		}
 
 		void UpdateMouseOver() {
 			Vector3 mouseOverPositionPrevious = mouseOverPosition;
-			mouseOverPosition=Vector3.down*10;
+			mouseOverPosition=Vector3.down*100000;
 			Ray ray = camera.ScreenPointToRay(Input.mousePosition);
 			int cnt = Physics.RaycastNonAlloc(ray,UtilityPhysics.rayactBuffer);
 			for(int i = 0;i<cnt;i++) {
@@ -46,6 +54,7 @@ namespace Gameplay {
 				}
 			}
 			mouseOverPositionDelta=mouseOverPosition-mouseOverPositionPrevious;
+			mouseOverPositionDelta.y=0;
 		}
 
 		float distanceChangePending;
