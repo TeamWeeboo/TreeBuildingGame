@@ -58,7 +58,9 @@ namespace Gameplay.Placement {
 
 		public virtual int cost => 0;
 
-		public bool CanAfford(Vector2 start,Vector2 end) {
+		public bool CanAfford(Vector2 start,Vector2 end,float fillRatio) {
+
+			float fillT = 0;
 
 			if(start.x>end.x) Utility.Swap(ref start.x,ref end.x);
 			if(start.y>end.y) Utility.Swap(ref start.y,ref end.y);
@@ -69,6 +71,9 @@ namespace Gameplay.Placement {
 					Vector2Int indexHere = new Vector2Int(i,j);
 					var targetElement = GridObject.instance.GetElement(indexHere);
 					if(targetElement!=null&CanPlace(indexHere)) {
+						fillT+=fillRatio;
+						if(fillT<1) continue;
+						fillT-=1;
 						totalCost+=cost;
 					}
 				}
