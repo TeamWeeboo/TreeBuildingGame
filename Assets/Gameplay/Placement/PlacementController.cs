@@ -38,7 +38,7 @@ namespace Gameplay.Placement {
 				if(start.y>end.y) Utility.Swap(ref start.y,ref end.y);
 
 				commandData.DoPreview(isDragging ? startIndex : index,index,true);
-				if(!isDragging&&Input.GetMouseButton(0)) {
+				if(!isDragging&&Input.GetMouseButton(0)&&!BlockDetector.isBlocked) {
 					startIndex=index;
 					isDragging=true;
 				}
