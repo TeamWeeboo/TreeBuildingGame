@@ -26,6 +26,7 @@ namespace Gameplay.Progression {
 
 		int cgStage;
 		int failStreak;
+		int winStreak;
 
 		public int currentDifficulty { get; private set; }
 		float timeAfterSandstorm;
@@ -63,6 +64,12 @@ namespace Gameplay.Progression {
 			if(cgStage==-1) cgStage=0;
 			if(!mouseDownPrevious&&Input.GetMouseButton(0)) {
 				cgStage++;
+
+				if(satisfiedDifficulty>=difficultyList.Length-1) {
+					winStreak++;
+					if(winStreak>=2) win.SetActive(true);
+				} else winStreak=0;
+
 			}
 			mouseDownPrevious=Input.GetMouseButton(0);
 
@@ -84,7 +91,7 @@ namespace Gameplay.Progression {
 					failStreak=0;
 				} else failStreak++;
 
-				if(currentDifficulty>=difficultyList.Length) win.SetActive(true);
+				if(currentDifficulty>=difficultyList.Length) currentDifficulty=difficultyList.Length-1;
 				if(failStreak>=3) lose.SetActive(true);
 
 				cgStage=-1;
