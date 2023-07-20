@@ -26,6 +26,7 @@ namespace Gameplay.Placement {
 		bool isDragging;
 
 		private void Update() {
+
 			Vector3 mouseOverPosition = cameraController.mouseOverPosition;
 
 			if(mouseOverPosition.y>=0) {

@@ -32,7 +32,7 @@ Transform:
   m_Children:
   - {fileID: 2720080523056917128}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &784480195997580626
 MonoBehaviour:
@@ -115,10 +115,10 @@ MonoBehaviour:
   tileBorder: {fileID: 11400000, guid: 59b6fb2b2ee34e34e909b024bb796f56, type: 2}
   tileSpread: {fileID: 11400000, guid: f19257c42e2d53146ae8c80a95488144, type: 2}
   borderWidthRange: {x: 4, y: 10}
-  spreadCoreCountMax: 30
-  spreadExtensionCountMax: 90
-  spreadCoreRadiusRange: {x: 10, y: 20}
-  spreadExtensionRadiusRange: {x: 5, y: 14}
+  spreadCoreCountMax: 13
+  spreadExtensionCountMax: 60
+  spreadCoreRadiusRange: {x: 5, y: 7}
+  spreadExtensionRadiusRange: {x: 2, y: 5}
   money: 100
 --- !u!1 &2906140306117019336
 GameObject:
@@ -356,6 +356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   commandData: {fileID: 11400000, guid: 91185deeb4bc41648a00df5689d481ba, type: 2}
+  fillRatio: 0.5
 --- !u!1 &7129896907680953272
 GameObject:
   m_ObjectHideFlags: 0
