@@ -18,8 +18,10 @@ namespace Gameplay.Simulation {
 		float timeAfterDisease = -1;
 		int stage;
 
+		static public float totalCoverage { get; private set; }
 		static float moneyCumulated;
 		float diseaseSpreadTime;
+		float coverageContribution;
 
 		private void Start() {
 			placement=GetComponent<PlacedObjectController>();
@@ -72,10 +74,13 @@ namespace Gameplay.Simulation {
 				saplingObject.SetActive(false);
 				treeObject.SetActive(true);
 				treeCount[boundData]++;
+				coverageContribution+=boundData.coverageContribution;
+				totalCoverage+=coverageContribution;
 			} else placement.boundElement.PlaceObject(null);
 		}
 		private void OnDestroy() {
 			if(stage==1) treeCount[boundData]--;
+			totalCoverage-=coverageContribution;
 		}
 
 		static Dictionary<TreeData,int> treeCount = new Dictionary<TreeData,int>();
