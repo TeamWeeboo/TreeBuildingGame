@@ -26,7 +26,7 @@ namespace Gameplay.Placement {
 
 		public override void DoPreview(Vector2Int start,Vector2Int end,bool doPreview) {
 			base.DoPreview(start,end,doPreview);
-			bool canAfford = CanAfford(start,end);
+			bool canAfford = CanAfford(start,end,PlacementController.instance.fillRatio);
 			bool canPlace = CanPlace(end)&&canAfford;
 
 			Vector3 position = GridObject.instance.GetGridPosition(end);
