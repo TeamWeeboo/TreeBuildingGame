@@ -1,4 +1,5 @@
 using Gameplay.Placement;
+using Gameplay.Progression;
 using Gameplay.Simulation;
 using System.Collections;
 using System.Collections.Generic;
@@ -25,7 +26,9 @@ namespace Gameplay.Placement {
 
 		public override void DoPreview(Vector2Int start,Vector2Int end,bool doPreview) {
 			base.DoPreview(start,end,doPreview);
-			bool canPlace = CanPlace(end);
+			bool canAfford = CanAfford(start,end);
+			bool canPlace = CanPlace(end)&&canAfford;
+
 			Vector3 position = GridObject.instance.GetGridPosition(end);
 			if(previewController==null&&previewMaterial!=null) {
 				GameObject previewObject = Instantiate(placementPrefab);
@@ -38,7 +41,7 @@ namespace Gameplay.Placement {
 			previewController.UpdateColor(canPlace ? new Color(1,1,1,0.5f) : new Color(1,0.3f,0.3f,0.5f));
 			previewController.gameObject.SetActive(true);
 
-			previewAreaMaterial.color=new Color(1,1,1,0.5f);
+			previewAreaMaterial.color=canAfford ? new Color(1,1,1,0.5f) : new Color(0.6f,0.1f,0.1f,0.5f);
 		}
 		public override void EndPreview() {
 			base.EndPreview();
@@ -47,7 +50,7 @@ namespace Gameplay.Placement {
 		}
 
 		public override bool CanPlace(Vector2Int index) {
-			if(Progression.Game.instance.money<treeType.cost) return false;
+			if(Game.instance.money<treeType.cost) return false;
 			if(GridObject.instance.IsIndexOOB(index)) return false;
 			return GridObject.instance.GetElement(index).placedObjectController==null;
 		}
@@ -57,6 +60,8 @@ namespace Gameplay.Placement {
 			result.treeType=boundData;
 			return result;
 		}
+
+		public override int cost => treeType.cost;
 
 	}
 
