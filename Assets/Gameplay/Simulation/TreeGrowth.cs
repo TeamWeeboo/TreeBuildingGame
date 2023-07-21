@@ -94,7 +94,7 @@ namespace Gameplay.Simulation {
 			if(!diseaseChance.ContainsKey(toUpdate))
 				diseaseChance.Add(toUpdate,0);
 
-			if(lastDiseaseAttempt[toUpdate]<Time.time-updateIntercal) {
+			if(lastDiseaseAttempt[toUpdate]<Time.time-updateIntercal/toUpdate.diseaseCreationFrequencyMultiplier) {
 				lastDiseaseAttempt[toUpdate]=Time.time;
 				int diseaseStage = 0;
 				for(int _ = 0;_<100;_++) {

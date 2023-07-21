@@ -8,7 +8,9 @@ namespace Gameplay.Progression {
 
 	public class SandstormController:MonoBehaviour {
 
-		[SerializeField] float[] difficultyList;
+	public static SandstormController instance;
+
+		[field: SerializeField] public float[] difficultyList { get; private set; }
 		[SerializeField] int[] rewardSuccessList;
 		[SerializeField] int[] rewardFailList;
 		[Tooltip("两个沙尘暴之间的间隔")]
@@ -34,6 +36,7 @@ namespace Gameplay.Progression {
 		public bool satisfiyCurrentDifficulty { get; private set; }
 
 		private void Start() {
+		instance = this;
 			win.SetActive(false);
 			lose.SetActive(false);
 		}
@@ -87,10 +90,13 @@ namespace Gameplay.Progression {
 				Time.timeScale=1;
 				timeAfterSandstorm=0;
 				if(satisfiyCurrentDifficulty) {
+					Game.instance.money+=rewardSuccessList[currentDifficulty];
 					currentDifficulty++;
 					failStreak=0;
-				} else failStreak++;
-
+				} else {
+					Game.instance.money+=rewardFailList[currentDifficulty];
+					failStreak++;
+				}
 				if(currentDifficulty>=difficultyList.Length) currentDifficulty=difficultyList.Length-1;
 				if(failStreak>=3) lose.SetActive(true);
 

@@ -581,7 +581,7 @@ Transform:
   - {fileID: 2535285413122552125}
   - {fileID: 9205396166562942339}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5001719215446778301
 MonoBehaviour:
@@ -595,10 +595,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e712ae990ec4d8418ab4a2c30d0b2d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  difficultyList:
-  - 10
-  - 20
-  - 30
+  <difficultyList>k__BackingField: []
   rewardSuccessList: 01000000020000000300000004000000
   rewardFailList: 05000000060000000700000007000000
   sandstormInterval: 10
@@ -682,7 +679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -988,7 +985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.28166926, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
