@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 4746.055, g: 3248.0024, b: 2481.5315, a: 1}
+  m_IndirectSpecularColor: {r: 4745.2915, g: 3251.0786, b: 2492.0256, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -76763,8 +76763,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: f19257c42e2d53146ae8c80a95488144, type: 2}
     - target: {fileID: 5293694435440081073, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
+      propertyPath: tileSpread2
+      value: 
+      objectReference: {fileID: 11400000, guid: f51d17da7591eb64d934f6484d9342ad, type: 2}
+    - target: {fileID: 5293694435440081073, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
       propertyPath: spreadCoreCountMax
-      value: 30
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 5293694435440081073, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
       propertyPath: spreadCoreRadiusRange.x
@@ -86105,38 +86109,6 @@ PrefabInstance:
     - target: {fileID: 2298635828992289317, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
       propertyPath: m_Name
       value: SandstormController
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: difficultyList.Array.data[1]
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: difficultyList.Array.data[2]
-      value: 1200
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: rewardFailList.Array.data[0]
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: rewardFailList.Array.data[1]
-      value: 250
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: rewardFailList.Array.data[2]
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: rewardSuccessList.Array.data[0]
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: rewardSuccessList.Array.data[1]
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: rewardSuccessList.Array.data[2]
-      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 9176913080226733561, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
       propertyPath: m_RootOrder

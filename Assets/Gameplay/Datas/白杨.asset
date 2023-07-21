@@ -32,3 +32,4 @@ MonoBehaviour:
   <diseaseThreshold>k__BackingField: 060000000c00000018000000
   <diseaseSpreadChance>k__BackingField: 0.7
   <diseaseTime>k__BackingField: 20
+  diseaseCreationFrequencyMultiplier: 2
