@@ -29,6 +29,6 @@ MonoBehaviour:
   <cost>k__BackingField: 150
   <coverageContribution>k__BackingField: 10
   <economics>k__BackingField: 0
-  <diseaseThreshold>k__BackingField: 0c0000001800000030000000
+  <diseaseThreshold>k__BackingField: 060000000c00000018000000
   <diseaseSpreadChance>k__BackingField: 0.5
   <diseaseTime>k__BackingField: 20
