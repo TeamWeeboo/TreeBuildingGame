@@ -106,7 +106,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 6574867b482fc51479d804313cfa9074, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -539,7 +539,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 677b8ee2b8dadc34ebc5192d8afb0770, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -596,13 +596,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficultyList:
-  - 10
-  - 20
-  - 30
-  rewardSuccessList: 01000000020000000300000004000000
-  rewardFailList: 05000000060000000700000007000000
-  sandstormInterval: 10
-  sandstormDuration: 30
+  - 100
+  - 300
+  - 600
+  rewardSuccessList: 32000000640000009600000004000000
+  rewardFailList: 6400000096000000c800000007000000
+  sandstormInterval: 180
+  sandstormDuration: 40
   sandstormVolumes:
   - {fileID: 7924378152419849437}
   - {fileID: 8951772008902466894}
@@ -1071,7 +1071,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 2f372a85f84007b4b9d92767179c5954, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1383,7 +1383,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: d865319992fc4114aaab6e2662aed0ab, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -22,6 +22,10 @@ MonoBehaviour:
       value: 0.5
     - key: {fileID: 11400000, guid: f19257c42e2d53146ae8c80a95488144, type: 2}
       value: 0
+    - key: {fileID: 11400000, guid: f8c98719694a21d4f94cf92ec5106a28, type: 2}
+      value: 0
+    - key: {fileID: 11400000, guid: eaef79c5d8943a34093270a59f33a995, type: 2}
+      value: 0
   <cost>k__BackingField: 1
   <coverageContribution>k__BackingField: 1
   <economics>k__BackingField: 1
