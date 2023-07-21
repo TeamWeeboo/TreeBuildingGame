@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   previewAreaPrefab: {fileID: 2799204760622206865, guid: f93e8fc6d0f595a44aebc77d5aa8639e, type: 3}
   _previewMaterial: {fileID: 2100000, guid: cc95290e604f8114cbfd985605d4600b, type: 2}
-  treeType: {fileID: 11400000, guid: 2f514d208dada574088287529e23f781, type: 2}
+  treeType: {fileID: 11400000, guid: 72d9ad90d2e2bff4e9fdec1fc8b6d0d8, type: 2}

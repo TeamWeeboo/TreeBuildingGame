@@ -1,6 +1,7 @@
 using Gameplay.Placement;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using TMPro;
 using UnityEngine;
 
@@ -21,6 +22,7 @@ namespace Gameplay {
 		[field: SerializeField] public float diseaseTime { get; private set; }
 
 		[field: SerializeField] public float diseaseCreationFrequencyMultiplier;
+		[field: SerializeField] public int diseaseCreationMaxAttempts;
 
 		TreePlacementCommand _command;
 		public TreePlacementCommand command {

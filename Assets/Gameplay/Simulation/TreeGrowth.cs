@@ -109,7 +109,7 @@ namespace Gameplay.Simulation {
 					bool catchSuccess = false;
 					Vector2Int index = new Vector2Int();
 					Vector2Int maxIndex = GridObject.instance.size;
-					for(int _ = 0;_<20;_++) {
+					for(int _ = 0;_<toUpdate.diseaseCreationMaxAttempts;_++) {
 						index=new Vector2Int(Random.Range(0,maxIndex.x),Random.Range(0,maxIndex.y));
 						if(GridObject.instance.GetElement(index).treeData==toUpdate) {
 							GridObject.instance.GetElement(index).placedObjectController.GetComponent<TreeGrowth>().CatchDisease();
