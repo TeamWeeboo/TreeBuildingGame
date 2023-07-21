@@ -13,9 +13,8 @@ public class MoneyDisplay:MonoBehaviour {
 
 	private void Update() {
 		textCost.text=$"花费 {PlacementController.instance.commandData.cost}";
-		textMoney.text=$"货币储存 {Game.instance.money}";
+		textMoney.text=$"经费 {Game.instance.money}";
 		textCoverage.text=$"绿化进度 {TreeGrowth.totalCoverage} / "+
-		$"{SandstormController.instance.difficultyList[SandstormController.instance.currentDifficulty]} "+
-		$"({SandstormController.instance.difficultyList[SandstormController.instance.difficultyList.Length-1]})";
+		$"{SandstormController.instance.difficultyList[SandstormController.instance.currentDifficulty]} ";
 	}
 }
