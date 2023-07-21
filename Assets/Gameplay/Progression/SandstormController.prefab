@@ -595,12 +595,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e712ae990ec4d8418ab4a2c30d0b2d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  difficultyList:
+  <difficultyList>k__BackingField:
   - 100
-  - 300
-  - 600
-  rewardSuccessList: 32000000640000009600000004000000
-  rewardFailList: 6400000096000000c800000007000000
+  - 500
+  - 1200
+  rewardSuccessList: 64000000f4010000e803000004000000
+  rewardFailList: 32000000fa000000f401000007000000
   sandstormInterval: 180
   sandstormDuration: 40
   sandstormVolumes:
