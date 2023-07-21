@@ -33,3 +33,4 @@ MonoBehaviour:
   <diseaseSpreadChance>k__BackingField: 0.4
   <diseaseTime>k__BackingField: 40
   diseaseCreationFrequencyMultiplier: 2
+  diseaseCreationMaxAttempts: 200
