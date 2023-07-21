@@ -20,6 +20,8 @@ namespace Gameplay {
 		[field: SerializeField] public float diseaseSpreadChance { get; private set; }
 		[field: SerializeField] public float diseaseTime { get; private set; }
 
+		[field: SerializeField] public float diseaseCreationFrequencyMultiplier;
+
 		TreePlacementCommand _command;
 		public TreePlacementCommand command {
 			get {

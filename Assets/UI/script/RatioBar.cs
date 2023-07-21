@@ -9,8 +9,6 @@ using Gameplay;
 public class RatioBar:MonoBehaviour {
 	public Slider slider;
 
-
-	// Update is called once per frame
 	void Update() {
 		PlacementController.instance.fillRatio=slider.value;
 		if(PlacementController.instance.fillRatio<0.1f) PlacementController.instance.fillRatio=0.1f;

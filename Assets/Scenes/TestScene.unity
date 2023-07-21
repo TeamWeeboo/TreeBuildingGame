@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 10938.464, g: 9320.493, b: 8212.126, a: 1}
+  m_IndirectSpecularColor: {r: 10888.837, g: 9279.579, b: 8204.415, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -643,10 +643,6 @@ PrefabInstance:
     - target: {fileID: 2298635828992289317, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
       propertyPath: m_Name
       value: SandstormController
-      objectReference: {fileID: 0}
-    - target: {fileID: 2298635828992289317, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9176913080226733561, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
       propertyPath: m_RootOrder
