@@ -30,5 +30,5 @@ MonoBehaviour:
   <coverageContribution>k__BackingField: 2
   <economics>k__BackingField: 3
   <diseaseThreshold>k__BackingField: 050000000a00000014000000
-  <diseaseSpreadChance>k__BackingField: 0.3
+  <diseaseSpreadChance>k__BackingField: 0.5
   <diseaseTime>k__BackingField: 30
