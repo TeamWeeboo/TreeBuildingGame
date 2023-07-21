@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 10888.837, g: 9279.579, b: 8204.415, a: 1}
+  m_IndirectSpecularColor: {r: 10934.886, g: 9316.056, b: 8207.415, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -627,6 +627,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5293694435440081073, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
+      propertyPath: tileSpread2
+      value: 
+      objectReference: {fileID: 11400000, guid: 59b6fb2b2ee34e34e909b024bb796f56, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
