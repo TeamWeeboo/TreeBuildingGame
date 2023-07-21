@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 4749.478, g: 3245.766, b: 2468.508, a: 1}
+  m_IndirectSpecularColor: {r: 4746.055, g: 3248.0024, b: 2481.5315, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -86102,30 +86102,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 870660116058394126, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 677b8ee2b8dadc34ebc5192d8afb0770, type: 3}
     - target: {fileID: 2298635828992289317, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
       propertyPath: m_Name
       value: SandstormController
       objectReference: {fileID: 0}
-    - target: {fileID: 2416944839131318623, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6574867b482fc51479d804313cfa9074, type: 3}
-    - target: {fileID: 3064767413713930099, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: d865319992fc4114aaab6e2662aed0ab, type: 3}
-    - target: {fileID: 3064767413713930099, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: m_Enabled
-      value: 1
+    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
+      propertyPath: difficultyList.Array.data[1]
+      value: 500
       objectReference: {fileID: 0}
-    - target: {fileID: 4756519982156683705, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 2f372a85f84007b4b9d92767179c5954, type: 3}
+    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
+      propertyPath: difficultyList.Array.data[2]
+      value: 1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
+      propertyPath: rewardFailList.Array.data[0]
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
+      propertyPath: rewardFailList.Array.data[1]
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
+      propertyPath: rewardFailList.Array.data[2]
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
+      propertyPath: rewardSuccessList.Array.data[0]
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
+      propertyPath: rewardSuccessList.Array.data[1]
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
+      propertyPath: rewardSuccessList.Array.data[2]
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 9176913080226733561, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -91981,6 +91993,22 @@ PrefabInstance:
     - target: {fileID: 3130048514669147409, guid: 38893ca8d640d504b93561abf9962933, type: 3}
       propertyPath: m_Name
       value: SeedLibraryMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 5845677242229834058, guid: 38893ca8d640d504b93561abf9962933, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7194801312906667139, guid: 38893ca8d640d504b93561abf9962933, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214327737938496911, guid: 38893ca8d640d504b93561abf9962933, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214327737938496911, guid: 38893ca8d640d504b93561abf9962933, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

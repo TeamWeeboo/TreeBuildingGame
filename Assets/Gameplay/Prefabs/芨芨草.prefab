@@ -533,9 +533,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dbfeabc47759ae47b0c0e63dda4cb56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeTimeRange: {x: 0, y: 0}
-  changeFrom: {fileID: 0}
-  changeTo: {fileID: 0}
+  changeTimeRange: {x: 30, y: 60}
+  changeFrom: {fileID: 11400000, guid: 59b6fb2b2ee34e34e909b024bb796f56, type: 2}
+  changeTo: {fileID: 11400000, guid: eaef79c5d8943a34093270a59f33a995, type: 2}
   destroySelfAfterChange: 0
 --- !u!1001 &4251312974066787910
 PrefabInstance:

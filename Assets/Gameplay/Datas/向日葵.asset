@@ -13,18 +13,22 @@ MonoBehaviour:
   m_Name: "\u5411\u65E5\u8475"
   m_EditorClassIdentifier: 
   <prefab>k__BackingField: {fileID: 9059605249618914519, guid: 90bbcd8077a0a2d4aa560110012630ba, type: 3}
-  <growthTime>k__BackingField: 5
+  <growthTime>k__BackingField: 25
   <survivalChance>k__BackingField:
     data:
     - key: {fileID: 11400000, guid: f51d17da7591eb64d934f6484d9342ad, type: 2}
-      value: 1
+      value: 0.02
     - key: {fileID: 11400000, guid: 59b6fb2b2ee34e34e909b024bb796f56, type: 2}
-      value: 0.5
-    - key: {fileID: 11400000, guid: f19257c42e2d53146ae8c80a95488144, type: 2}
       value: 0
-  <cost>k__BackingField: 1
-  <coverageContribution>k__BackingField: 1
-  <economics>k__BackingField: 1
-  <diseaseThreshold>k__BackingField: 010000001900000064000000
-  <diseaseSpreadChance>k__BackingField: 0.4
+    - key: {fileID: 11400000, guid: f19257c42e2d53146ae8c80a95488144, type: 2}
+      value: 0.05
+    - key: {fileID: 11400000, guid: f8c98719694a21d4f94cf92ec5106a28, type: 2}
+      value: 0.7
+    - key: {fileID: 11400000, guid: eaef79c5d8943a34093270a59f33a995, type: 2}
+      value: 0.4
+  <cost>k__BackingField: 100
+  <coverageContribution>k__BackingField: 2
+  <economics>k__BackingField: 6
+  <diseaseThreshold>k__BackingField: 03000000060000000c000000
+  <diseaseSpreadChance>k__BackingField: 0.8
   <diseaseTime>k__BackingField: 10
