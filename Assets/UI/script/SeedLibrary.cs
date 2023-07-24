@@ -33,7 +33,7 @@ public class SeedLibrary : MonoBehaviour
     public void SeedLibraryClick()
     {
         Library.SetActive(false);
-        Sort1.SetActive(true);
+        Sort1.SetActive(false);
         Sorts.SetActive(true);
     }
 
