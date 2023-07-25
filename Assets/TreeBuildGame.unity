@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 4721.4766, g: 3351.0269, b: 2876.549, a: 1}
+  m_IndirectSpecularColor: {r: 4573.272, g: 3125.3237, b: 2497.928, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -76697,6 +76697,30 @@ PrefabInstance:
     - target: {fileID: 197031026561898932, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -46.446
+      objectReference: {fileID: 0}
+    - target: {fileID: 784480195997580626, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
+      propertyPath: maxPitch.m_Curve.Array.data[0].time
+      value: 0.35402107
+      objectReference: {fileID: 0}
+    - target: {fileID: 784480195997580626, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
+      propertyPath: maxPitch.m_Curve.Array.data[1].time
+      value: 99.28436
+      objectReference: {fileID: 0}
+    - target: {fileID: 784480195997580626, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
+      propertyPath: minPitch.m_Curve.Array.data[0].time
+      value: 0.9069159
+      objectReference: {fileID: 0}
+    - target: {fileID: 784480195997580626, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
+      propertyPath: maxPitch.m_Curve.Array.data[0].value
+      value: 75.47575
+      objectReference: {fileID: 0}
+    - target: {fileID: 784480195997580626, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
+      propertyPath: maxPitch.m_Curve.Array.data[1].value
+      value: 114.1463
+      objectReference: {fileID: 0}
+    - target: {fileID: 784480195997580626, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
+      propertyPath: minPitch.m_Curve.Array.data[0].value
+      value: -0.020755768
       objectReference: {fileID: 0}
     - target: {fileID: 1557780386569258537, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
       propertyPath: m_Name
