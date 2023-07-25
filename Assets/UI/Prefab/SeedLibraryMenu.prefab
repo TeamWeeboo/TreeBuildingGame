@@ -748,6 +748,7 @@ GameObject:
   - component: {fileID: 6585848436618910873}
   - component: {fileID: 1147295555536240109}
   - component: {fileID: 4531778438948985654}
+  - component: {fileID: 7528270762968170545}
   m_Layer: 5
   m_Name: "\u65F1\u67F3"
   m_TagString: Untagged
@@ -870,6 +871,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &7528270762968170545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289677576701919850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03072795e11aa9c4abc873a52d277669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Detail: {fileID: 0}
 --- !u!1 &1354344982553339501
 GameObject:
   m_ObjectHideFlags: 0
@@ -2069,7 +2083,7 @@ RectTransform:
   - {fileID: 1642317701102330577}
   - {fileID: 555763037690269100}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3652,7 +3666,7 @@ GameObject:
   - component: {fileID: 7217156661933987543}
   - component: {fileID: 6059798386010486124}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
