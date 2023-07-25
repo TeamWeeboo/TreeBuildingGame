@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -12,9 +12,9 @@ public class MoneyDisplay:MonoBehaviour {
 	[SerializeField] TextMeshProUGUI textCoverage;
 
 	private void Update() {
-		textCost.text=$"»¨·Ñ {PlacementController.instance.commandData.cost}";
-		textMoney.text=$"¾­·Ñ {Game.instance.money}";
-		textCoverage.text=$"ÂÌ»¯½ø¶È {TreeGrowth.totalCoverage} / "+
+		textCost.text=$"ç§æ¤èŠ±è´¹Â·planting costï¼š {PlacementController.instance.commandData.cost}Â¥";
+		textMoney.text=$"ç»è´¹Â·Fundï¼š {Game.instance.money} Â¥";
+		textCoverage.text=$"{TreeGrowth.totalCoverage} / "+
 		$"{SandstormController.instance.difficultyList[SandstormController.instance.currentDifficulty]} ";
 	}
 }
