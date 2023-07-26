@@ -2,6 +2,7 @@ using Gameplay.Simulation;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.Rendering;
 
 namespace Gameplay.Progression {
@@ -35,6 +36,8 @@ namespace Gameplay.Progression {
 		public int satisfiedDifficulty { get; private set; }
 		public bool satisfiyCurrentDifficulty { get; private set; }
 
+		
+
 		private void Start() {
 		instance = this;
 			win.SetActive(false);
@@ -42,6 +45,7 @@ namespace Gameplay.Progression {
 		}
 
 		private void Update() {
+			CountDown();
 			timeAfterSandstorm+=Time.deltaTime;
 			satisfiedDifficulty=-1;
 			for(int i = 0;i<difficultyList.Length;i++) {
@@ -106,6 +110,17 @@ namespace Gameplay.Progression {
 
 		}
 
+
+		//我改的
+		public TextMeshProUGUI Text;
+		private float timer;
+		void CountDown(){
+			timer = sandstormInterval - timeAfterSandstorm;
+			if(timer > 0){
+					Text.text = $"沙尘暴倒计时：{timer.ToString("F0")}";
+			}else 	Text.text = "沙尘暴突击中";
+		}
+		
 	}
 
 }
