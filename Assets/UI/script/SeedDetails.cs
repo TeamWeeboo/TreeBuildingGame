@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class SeedDetails : MonoBehaviour
 {
@@ -8,12 +10,12 @@ public class SeedDetails : MonoBehaviour
 
 
 
-    public void OnPointerEnter()
+    public void OnPointerEnter(PointerEventData PointerEvent)
     {
         Detail.SetActive(true);
     } 
 
-    public void OnPointerExit()
+    public void OnPointerExit(PointerEventData Pointerevent)
     {
         Detail.SetActive(false);
     }
