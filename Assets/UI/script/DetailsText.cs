@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -26,17 +26,17 @@ public class DetailsText : MonoBehaviour
     {
         if (Data.coverageContribution >= GreenHigh)
         {
-            Green = "��";
+            Green = "HIGH";
         }
         else if (Data.coverageContribution >= GreenMid && Data.coverageContribution < GreenHigh)
         {
-            Green = "��";
+            Green = "MID";
         }
         else
         {
-            Green = "��";
+            Green = "LOW";
         }
 
-        Text.text = $"{Data.cost}\n{Data.economics}\n{Data.growthTime}\n{Green}";
+        Text.text = $"种植花费·Planting Cost:\t\t{Data.cost}¥\n经济效益·economic benefits:\t{Data.economics}¥\n生长时间·growth time：\t\t{Data.growthTime}s\n绿化值·Green value：\t\t{Green}\n存活率·survival rate↓";
     }
 }
