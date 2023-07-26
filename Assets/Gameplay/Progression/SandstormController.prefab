@@ -623,6 +623,7 @@ MonoBehaviour:
   - {fileID: 7702339168786309098}
   win: {fileID: 6700040080152151145}
   lose: {fileID: 2855206728934267434}
+  Text: {fileID: 0}
 --- !u!1 &2855206728934267434
 GameObject:
   m_ObjectHideFlags: 0

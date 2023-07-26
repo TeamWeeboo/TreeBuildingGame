@@ -117,8 +117,8 @@ namespace Gameplay.Progression {
 		void CountDown(){
 			timer = sandstormInterval - timeAfterSandstorm;
 			if(timer > 0){
-					Text.text = $"É³³¾±©µ¹¼ÆÊ±£º{timer.ToString("F0")}";
-			}else 	Text.text = "É³³¾±©Í»»÷ÖÐ";
+					Text.text = $"É³³¾±©µ¹¼ÆÊ±\nSandstorm Countdown\n{timer.ToString("F0")} s";
+			}else 	Text.text = "É³³¾±©Í»»÷ÖÐ\nSandstorm is coming!";
 		}
 		
 	}
