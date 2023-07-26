@@ -12,8 +12,8 @@ public class MoneyDisplay:MonoBehaviour {
 	[SerializeField] TextMeshProUGUI textCoverage;
 
 	private void Update() {
-		textCost.text=$"种植花费·planting cost： {PlacementController.instance.commandData.cost}¥";
-		textMoney.text=$"经费·Fund： {Game.instance.money} ¥";
+		textCost.text=$"{PlacementController.instance.commandData.cost}¥";
+		textMoney.text=$"{Game.instance.money} ¥";
 		textCoverage.text=$"{TreeGrowth.totalCoverage} / "+
 		$"{SandstormController.instance.difficultyList[SandstormController.instance.currentDifficulty]} ";
 	}
