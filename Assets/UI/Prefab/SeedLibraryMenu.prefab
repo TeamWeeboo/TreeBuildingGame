@@ -1018,6 +1018,42 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1391108026548211443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 33983043616286465}
+  m_Layer: 5
+  m_Name: Empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &33983043616286465
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391108026548211443}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1055201262001318933}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1415479745774744969
 GameObject:
   m_ObjectHideFlags: 0
@@ -1471,11 +1507,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03072795e11aa9c4abc873a52d277669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  order: 1
-  Order1: {fileID: 0}
-  Order2: {fileID: 0}
-  Order3: {fileID: 0}
-  Order4: {fileID: 0}
+  order: 3
+  Order1: {fileID: 33983043616286465}
+  Order2: {fileID: 33983043616286465}
+  Order3: {fileID: 6011418345200937739}
+  Order4: {fileID: 117715546537183867}
 --- !u!1 &1670545478556929951
 GameObject:
   m_ObjectHideFlags: 0
@@ -2754,6 +2790,7 @@ RectTransform:
   - {fileID: 3493163935855518270}
   - {fileID: 1642317701102330577}
   - {fileID: 555763037690269100}
+  - {fileID: 33983043616286465}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3858,11 +3895,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03072795e11aa9c4abc873a52d277669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  order: 1
-  Order1: {fileID: 0}
-  Order2: {fileID: 0}
-  Order3: {fileID: 0}
-  Order4: {fileID: 0}
+  order: 2
+  Order1: {fileID: 33983043616286465}
+  Order2: {fileID: 8172720747044736621}
+  Order3: {fileID: 7034780387231765797}
+  Order4: {fileID: 289665480668277807}
 --- !u!1 &4253951840900899796
 GameObject:
   m_ObjectHideFlags: 0
@@ -3967,11 +4004,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03072795e11aa9c4abc873a52d277669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  order: 1
-  Order1: {fileID: 0}
-  Order2: {fileID: 0}
-  Order3: {fileID: 0}
-  Order4: {fileID: 0}
+  order: 4
+  Order1: {fileID: 33983043616286465}
+  Order2: {fileID: 33983043616286465}
+  Order3: {fileID: 6011418345200937739}
+  Order4: {fileID: 117715546537183867}
 --- !u!1 &4289468024723887052
 GameObject:
   m_ObjectHideFlags: 0
@@ -5043,11 +5080,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03072795e11aa9c4abc873a52d277669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  order: 1
-  Order1: {fileID: 0}
-  Order2: {fileID: 0}
-  Order3: {fileID: 0}
-  Order4: {fileID: 0}
+  order: 4
+  Order1: {fileID: 33983043616286465}
+  Order2: {fileID: 33983043616286465}
+  Order3: {fileID: 7164904917432865073}
+  Order4: {fileID: 2874427363517563755}
 --- !u!1 &5452297947293879126
 GameObject:
   m_ObjectHideFlags: 0
@@ -6666,7 +6703,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 53.55
+  m_fontSize: 18
   m_fontSizeBase: 48.86
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6813,10 +6850,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   order: 1
-  Order1: {fileID: 0}
-  Order2: {fileID: 0}
-  Order3: {fileID: 0}
-  Order4: {fileID: 0}
+  Order1: {fileID: 2818267658823734468}
+  Order2: {fileID: 3300865689866216538}
+  Order3: {fileID: 4115593445843593628}
+  Order4: {fileID: 2605104147127415352}
 --- !u!1 &6970146620664313627
 GameObject:
   m_ObjectHideFlags: 0
@@ -7137,7 +7174,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 31
+  m_fontSize: 18
   m_fontSizeBase: 48.86
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7497,11 +7534,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03072795e11aa9c4abc873a52d277669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  order: 1
-  Order1: {fileID: 0}
-  Order2: {fileID: 0}
-  Order3: {fileID: 0}
-  Order4: {fileID: 0}
+  order: 3
+  Order1: {fileID: 33983043616286465}
+  Order2: {fileID: 8172720747044736621}
+  Order3: {fileID: 7034780387231765797}
+  Order4: {fileID: 289665480668277807}
 --- !u!1 &7396404248163876067
 GameObject:
   m_ObjectHideFlags: 0
@@ -8145,11 +8182,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03072795e11aa9c4abc873a52d277669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  order: 1
-  Order1: {fileID: 0}
-  Order2: {fileID: 0}
-  Order3: {fileID: 0}
-  Order4: {fileID: 0}
+  order: 3
+  Order1: {fileID: 2818267658823734468}
+  Order2: {fileID: 3300865689866216538}
+  Order3: {fileID: 4115593445843593628}
+  Order4: {fileID: 2605104147127415352}
 --- !u!1 &7779470365926172094
 GameObject:
   m_ObjectHideFlags: 0
@@ -8385,11 +8422,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03072795e11aa9c4abc873a52d277669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  order: 1
-  Order1: {fileID: 0}
-  Order2: {fileID: 0}
-  Order3: {fileID: 0}
-  Order4: {fileID: 0}
+  order: 3
+  Order1: {fileID: 33983043616286465}
+  Order2: {fileID: 33983043616286465}
+  Order3: {fileID: 7164904917432865073}
+  Order4: {fileID: 2874427363517563755}
 --- !u!1 &8052307350577400772
 GameObject:
   m_ObjectHideFlags: 0
@@ -8631,11 +8668,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03072795e11aa9c4abc873a52d277669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  order: 1
-  Order1: {fileID: 0}
-  Order2: {fileID: 0}
-  Order3: {fileID: 0}
-  Order4: {fileID: 0}
+  order: 2
+  Order1: {fileID: 2818267658823734468}
+  Order2: {fileID: 3300865689866216538}
+  Order3: {fileID: 4115593445843593628}
+  Order4: {fileID: 2605104147127415352}
 --- !u!1 &8088915039459378467
 GameObject:
   m_ObjectHideFlags: 0
@@ -9011,11 +9048,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03072795e11aa9c4abc873a52d277669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  order: 1
-  Order1: {fileID: 0}
-  Order2: {fileID: 0}
-  Order3: {fileID: 0}
-  Order4: {fileID: 0}
+  order: 4
+  Order1: {fileID: 2818267658823734468}
+  Order2: {fileID: 3300865689866216538}
+  Order3: {fileID: 4115593445843593628}
+  Order4: {fileID: 2605104147127415352}
 --- !u!1 &8437322213226362926
 GameObject:
   m_ObjectHideFlags: 0
@@ -9468,11 +9505,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03072795e11aa9c4abc873a52d277669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  order: 1
-  Order1: {fileID: 0}
-  Order2: {fileID: 0}
-  Order3: {fileID: 0}
-  Order4: {fileID: 0}
+  order: 4
+  Order1: {fileID: 33983043616286465}
+  Order2: {fileID: 8172720747044736621}
+  Order3: {fileID: 7034780387231765797}
+  Order4: {fileID: 289665480668277807}
 --- !u!1 &8609080487417560550
 GameObject:
   m_ObjectHideFlags: 0
