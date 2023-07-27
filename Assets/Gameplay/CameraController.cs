@@ -63,10 +63,10 @@ namespace Gameplay {
 
 			//local
 			Vector4 localMovement = new Vector4();
-			if(Input.GetKey(KeyCode.W)) localMovement.z+=keyboardMoveSpeed*cameraDistance*Time.deltaTime;
-			if(Input.GetKey(KeyCode.S)) localMovement.z-=keyboardMoveSpeed*cameraDistance*Time.deltaTime;
-			if(Input.GetKey(KeyCode.D)) localMovement.x+=keyboardMoveSpeed*cameraDistance*Time.deltaTime;
-			if(Input.GetKey(KeyCode.A)) localMovement.x-=keyboardMoveSpeed*cameraDistance*Time.deltaTime;
+			if(Input.GetKey(KeyCode.W)) localMovement.z+=keyboardMoveSpeed*cameraDistance*Time.unscaledDeltaTime;
+			if(Input.GetKey(KeyCode.S)) localMovement.z-=keyboardMoveSpeed*cameraDistance*Time.unscaledDeltaTime;
+			if(Input.GetKey(KeyCode.D)) localMovement.x+=keyboardMoveSpeed*cameraDistance*Time.unscaledDeltaTime;
+			if(Input.GetKey(KeyCode.A)) localMovement.x-=keyboardMoveSpeed*cameraDistance*Time.unscaledDeltaTime;
 			transform.position+=(Vector3)(transform.localToWorldMatrix*localMovement);
 
 			//world

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 7909.0156, g: 6089.112, b: 4300.6177, a: 1}
+  m_IndirectSpecularColor: {r: 3556.4546, g: 2602.4944, b: 2714.9885, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -76670,65 +76670,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 197031026561898932, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.000011444092
-      objectReference: {fileID: 0}
-    - target: {fileID: 197031026561898932, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -40.000008
-      objectReference: {fileID: 0}
-    - target: {fileID: 197031026561898932, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9189776
-      objectReference: {fileID: 0}
-    - target: {fileID: 197031026561898932, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.39430964
-      objectReference: {fileID: 0}
-    - target: {fileID: 197031026561898932, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 197031026561898932, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 197031026561898932, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -46.446
-      objectReference: {fileID: 0}
-    - target: {fileID: 784480195997580626, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
-      propertyPath: maxPitch.m_Curve.Array.data[0].time
-      value: 0.35402107
-      objectReference: {fileID: 0}
-    - target: {fileID: 784480195997580626, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
-      propertyPath: maxPitch.m_Curve.Array.data[1].time
-      value: 99.28436
-      objectReference: {fileID: 0}
-    - target: {fileID: 784480195997580626, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
-      propertyPath: minPitch.m_Curve.Array.data[0].time
-      value: 0.9069159
-      objectReference: {fileID: 0}
-    - target: {fileID: 784480195997580626, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
-      propertyPath: maxPitch.m_Curve.Array.data[0].value
-      value: 75.47575
-      objectReference: {fileID: 0}
-    - target: {fileID: 784480195997580626, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
-      propertyPath: maxPitch.m_Curve.Array.data[1].value
-      value: 114.1463
-      objectReference: {fileID: 0}
-    - target: {fileID: 784480195997580626, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
-      propertyPath: minPitch.m_Curve.Array.data[0].value
-      value: -0.020755768
-      objectReference: {fileID: 0}
     - target: {fileID: 1557780386569258537, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
       propertyPath: m_Name
       value: CameraController
-      objectReference: {fileID: 0}
-    - target: {fileID: 2984687245345639771, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
-      propertyPath: far clip plane
-      value: 4490
       objectReference: {fileID: 0}
     - target: {fileID: 4147591100766670295, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
       propertyPath: m_RootOrder
@@ -76773,46 +76717,6 @@ PrefabInstance:
     - target: {fileID: 4147591100766670295, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5293694435440081073, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
-      propertyPath: tileBase
-      value: 
-      objectReference: {fileID: 11400000, guid: 59b6fb2b2ee34e34e909b024bb796f56, type: 2}
-    - target: {fileID: 5293694435440081073, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
-      propertyPath: tileBorder
-      value: 
-      objectReference: {fileID: 11400000, guid: 59b6fb2b2ee34e34e909b024bb796f56, type: 2}
-    - target: {fileID: 5293694435440081073, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
-      propertyPath: tileSpread
-      value: 
-      objectReference: {fileID: 11400000, guid: f19257c42e2d53146ae8c80a95488144, type: 2}
-    - target: {fileID: 5293694435440081073, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
-      propertyPath: tileSpread2
-      value: 
-      objectReference: {fileID: 11400000, guid: f51d17da7591eb64d934f6484d9342ad, type: 2}
-    - target: {fileID: 5293694435440081073, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
-      propertyPath: spreadCoreCountMax
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 5293694435440081073, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
-      propertyPath: spreadCoreRadiusRange.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5293694435440081073, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
-      propertyPath: spreadCoreRadiusRange.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5293694435440081073, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
-      propertyPath: spreadExtensionCountMax
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 5293694435440081073, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
-      propertyPath: spreadExtensionRadiusRange.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5293694435440081073, guid: cae7e09a37a439d41b28b0854a5d8991, type: 3}
-      propertyPath: spreadExtensionRadiusRange.y
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
