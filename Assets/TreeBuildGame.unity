@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 7909.0156, g: 6089.112, b: 4300.6177, a: 1}
+  m_IndirectSpecularColor: {r: 7907.5957, g: 6088.518, b: 4301.5474, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -92004,6 +92004,10 @@ PrefabInstance:
     - target: {fileID: 3130048514669147409, guid: 38893ca8d640d504b93561abf9962933, type: 3}
       propertyPath: m_Name
       value: SeedLibraryMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4897649776481598824, guid: 38893ca8d640d504b93561abf9962933, type: 3}
+      propertyPath: m_fontSize
+      value: 33.35
       objectReference: {fileID: 0}
     - target: {fileID: 5845677242229834058, guid: 38893ca8d640d504b93561abf9962933, type: 3}
       propertyPath: m_AnchorMax.y
