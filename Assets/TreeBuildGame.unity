@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 3556.4546, g: 2602.4944, b: 2714.9885, a: 1}
+  m_IndirectSpecularColor: {r: 7908.949, g: 6089.022, b: 4300.61, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -91905,6 +91905,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1162389865701276000, guid: 38893ca8d640d504b93561abf9962933, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 15.300049
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686372628557104212, guid: 38893ca8d640d504b93561abf9962933, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -52.09961
+      objectReference: {fileID: 0}
     - target: {fileID: 3130048514669147409, guid: 38893ca8d640d504b93561abf9962933, type: 3}
       propertyPath: m_Name
       value: SeedLibraryMenu
@@ -91913,9 +91921,17 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7155479055932855135, guid: 38893ca8d640d504b93561abf9962933, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 132.2002
+      objectReference: {fileID: 0}
     - target: {fileID: 7194801312906667139, guid: 38893ca8d640d504b93561abf9962933, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7937498518633278609, guid: 38893ca8d640d504b93561abf9962933, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -129.80957
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
