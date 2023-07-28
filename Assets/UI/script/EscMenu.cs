@@ -6,7 +6,6 @@ public class EscMenu : MonoBehaviour
 {
     public GameObject Menu;
     private bool MenuKey = true;
-    public AudioSource Bgm;
 
     void Update()
     {
@@ -16,13 +15,11 @@ public class EscMenu : MonoBehaviour
             Menu.SetActive(true);
             MenuKey = false;
             Time.timeScale = (0);
-            Bgm.Pause();
             }
         }else if(Input.GetKeyDown(KeyCode.Escape)){
             Menu.SetActive(false);
             MenuKey = true;
             Time.timeScale = (1);
-            Bgm.Pause();
         }
     }
 
@@ -30,12 +27,10 @@ public class EscMenu : MonoBehaviour
         Menu.SetActive(false);
         MenuKey = true;
         Time.timeScale = (1);
-        Bgm.Pause();
     }
-    public void Option(){
-        Debug.Log("111");
-    }
-    public void QuitGame(){
-        Application.Quit();
+    public void ClickMenu(){
+        Menu.SetActive(true);
+        MenuKey = false;
+        Time.timeScale = (0);
     }
 }

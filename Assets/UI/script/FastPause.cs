@@ -6,11 +6,12 @@ using UnityEngine.UI;
 public class FastPause : MonoBehaviour
 {
     public int order;
-    private Image image;
+    public RectTransform CoverRT;
+    private RectTransform RT;
+
     
     private void Awake() {
-        image = GetComponent<Image>();
-        image.material = Instantiate(image.material);
+        RT = GetComponent<RectTransform>();
     }
     public void Pause(){
         Time.timeScale = (0);
@@ -25,26 +26,19 @@ public class FastPause : MonoBehaviour
         Time.timeScale = (3);
     }
     private void Light(){
-        if(order == 0){
-            if(Time.timeScale == 0){
-                image.material.SetFloat("_Outline",1);
-            }else image.material.SetFloat("_Outline",0);
+        if(order == 0 && Time.timeScale == 0){
+            CoverRT.anchoredPosition = RT.anchoredPosition;
         }
-        if(order == 1){
-            if(Time.timeScale == 1){
-                image.material.SetFloat("_Outline",1);
-            }else image.material.SetFloat("_Outline",0);
+        if(order == 1 && Time.timeScale == 1){
+            CoverRT.anchoredPosition = RT.anchoredPosition;
         }
-        if(order == 2){
-            if(Time.timeScale == 2){
-                image.material.SetFloat("_Outline",1);
-            }else image.material.SetFloat("_Outline",0);
+        if(order == 2 && Time.timeScale == 2){
+            CoverRT.anchoredPosition = RT.anchoredPosition;
         }
-        if(order == 3){
-            if(Time.timeScale == 3){
-                image.material.SetFloat("_Outline",1);
-            }else image.material.SetFloat("_Outline",0);
+        if(order == 3 && Time.timeScale == 3){
+            CoverRT.anchoredPosition = RT.anchoredPosition;
         }
+            
     }
     void Update(){
         Light();
