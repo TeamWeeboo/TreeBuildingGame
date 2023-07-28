@@ -32,7 +32,7 @@ Transform:
   m_Children:
   - {fileID: 2720080523056917128}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &784480195997580626
 MonoBehaviour:
@@ -53,8 +53,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 15
+      time: 0.9069159
+      value: -0.020755768
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -77,8 +77,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 50
+      time: 0.35402107
+      value: 75.47575
       inSlope: 0.9683724
       outSlope: 0.9683724
       tangentMode: 0
@@ -86,8 +86,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0.061416525
     - serializedVersion: 3
-      time: 100
-      value: 85
+      time: 99.28436
+      value: 114.1463
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -113,14 +113,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39118d3026821304ba25d4b40fb26f2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tileBase: {fileID: 11400000, guid: f51d17da7591eb64d934f6484d9342ad, type: 2}
-  tileBorder: {fileID: 11400000, guid: 59b6fb2b2ee34e34e909b024bb796f56, type: 2}
+  tileBase: {fileID: 11400000, guid: 59b6fb2b2ee34e34e909b024bb796f56, type: 2}
+  tileSpread2: {fileID: 11400000, guid: f51d17da7591eb64d934f6484d9342ad, type: 2}
   tileSpread: {fileID: 11400000, guid: f19257c42e2d53146ae8c80a95488144, type: 2}
   borderWidthRange: {x: 4, y: 10}
-  spreadCoreCountMax: 13
-  spreadExtensionCountMax: 60
-  spreadCoreRadiusRange: {x: 5, y: 7}
-  spreadExtensionRadiusRange: {x: 2, y: 5}
+  spreadCoreCountMax: 150
+  spreadExtensionCountMax: 200
+  spreadCoreRadiusRange: {x: 2, y: 3}
+  spreadExtensionRadiusRange: {x: 2, y: 4}
   money: 100
 --- !u!1 &2906140306117019336
 GameObject:
@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 1016553271572666409}
   - component: {fileID: 4764648002037118443}
   - component: {fileID: 2737676546044652797}
+  - component: {fileID: 5404346752157944445}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -149,14 +150,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2906140306117019336}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -40}
+  m_LocalRotation: {x: -0.39430964, y: -0, z: -0, w: 0.9189776}
+  m_LocalPosition: {x: 0, y: -0.000011444092, z: -40.000008}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2720080523056917128}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -46.446, y: 0, z: 0}
 --- !u!20 &2984687245345639771
 Camera:
   m_ObjectHideFlags: 0
@@ -189,7 +190,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 4490
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -359,6 +360,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   commandData: {fileID: 11400000, guid: 91185deeb4bc41648a00df5689d481ba, type: 2}
   fillRatio: 0.5
+--- !u!114 &5404346752157944445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2906140306117019336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdd2fbfca2d9c91438d7b3422fe6eac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Menu: {fileID: 0}
+  Bgm: {fileID: 0}
 --- !u!1 &7129896907680953272
 GameObject:
   m_ObjectHideFlags: 0
