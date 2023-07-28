@@ -7,6 +7,7 @@ public class FirstTutorial : MonoBehaviour
     public GameObject BackGround;
     private void Awake() {
         BackGround.SetActive(true);
+        Time.timeScale = (0);
     }
 
 }

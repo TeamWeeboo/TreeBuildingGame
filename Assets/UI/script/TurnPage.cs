@@ -17,16 +17,19 @@ public class TurnPage : MonoBehaviour
             gameObject.SetActive(false);
             Text1.SetActive(false);
             page = 1;
+            Time.timeScale = (1);
         }
         if(amount == 2 && page == 1){
             Text1.SetActive(false);
             Text2.SetActive(true);
             page = 2;
+            Time.timeScale = (0);
         }else if(amount == 2 && page == 2){
             gameObject.SetActive(false);
             Text1.SetActive(false);
             Text2.SetActive(false);
             page = 1;
+            Time.timeScale = (1);
         }
     }
 }
