@@ -313,166 +313,6 @@ MonoBehaviour:
   colorDefault: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   colorSelected: {r: 0.25, g: 0.65, b: 0.8, a: 1}
   nameLabel: {fileID: 0}
---- !u!1 &1116566349985982206
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6744786608333645160}
-  - component: {fileID: 3042066697984926309}
-  - component: {fileID: 6568249869433635037}
-  - component: {fileID: 5873921426394964213}
-  m_Layer: 5
-  m_Name: First2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &6744786608333645160
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1116566349985982206}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1917959800862005619}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.2520275, y: 12.4}
-  m_SizeDelta: {x: 609.5964, y: 292.17}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &3042066697984926309
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1116566349985982206}
-  m_CullTransparentMesh: 1
---- !u!114 &6568249869433635037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1116566349985982206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "Game Tutorial: \n\nSection 1: Camera Controls\uFF1A\nCamera Movement -
-    WSAD\nCamera Rotation - Right Mouse Button\n\nSection 2: Game Speed Adjustment\nSpeed
-    Control - Upper Right Button In the upper right corner of the screen, you'll
-    find a button to adjust the game speed. Click on it to toggle between different
-    speed settings\n\nSection 3: Plant Selection\nIn the lower left corner of the
-    screen, you'll find a button to access the plant selection menu. Click on it
-    to open the menu and browse through the available plant options.\n\nSection 4:
-    Fill ratio of mass planting\nIn the lower left corner of the screen, you'll also
-    find a slider to adjust the batch planting density. This feature allows you to
-    modify the density of saplings when engaging in large-scale planting activities."
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1c262b9461e67cb4e9653335a72becaf, type: 2}
-  m_sharedMaterial: {fileID: -3331716886334002538, guid: 1c262b9461e67cb4e9653335a72becaf, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 14.2
-  m_fontSizeBase: 14.2
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: -10.117889, y: 0, z: 0, w: -27.594254}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &5873921426394964213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1116566349985982206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bff080b4e3bae64c80b54402ced6cc6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colorDefault: {r: 0.8, g: 0.8, b: 0.8, a: 1}
-  colorSelected: {r: 0.25, g: 0.65, b: 0.8, a: 1}
-  nameLabel: {fileID: 0}
 --- !u!1 &1870286216426222444
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,7 +327,7 @@ GameObject:
   - component: {fileID: 5180434367347099597}
   - component: {fileID: 1914496553488183705}
   m_Layer: 5
-  m_Name: "\u4E54\u6728\u6559\u7A0B "
+  m_Name: "\u704C\u6728\u6559\u7A0B "
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -506,7 +346,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1811350211777875055}
-  - {fileID: 3502015175902544671}
   m_Father: {fileID: 473877533599157537}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -622,8 +461,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Text1: {fileID: 3536515615531896503}
-  Text2: {fileID: 7472287681409253466}
-  amount: 2
+  Text2: {fileID: 0}
+  amount: 1
 --- !u!1 &2656639572361633612
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,18 +530,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Welcome to Tree-Planting Village in Sahanba, Hebei\uFF01\n\nHere, amidst
-    the tranquility, you are tasked with a noble mission - combating the relentless
-    sandstorms through tree planting. At first glance, it may seem like a simple
-    endeavor, but alas, the planting conditions here are far from forgiving.\n\nIn
-    the face of adversity, you will need to employ your expertise in flora and nurture
-    the land with care. Transforming the harsh soil requires a delicate touch, as
-    you select the right plants to breathe life into this arid landscape.\n\nBut
-    that's not all. As you embark on this journey, remember the importance of biodiversity.
-    Nature's harmony lies in the rich tapestry of plant life, and it is your duty
-    to preserve and foster this diversity.\n\nYou hold the power to make a profound
-    impact. The Chinese government and its people will forever remember and honor
-    your contribution to greening the land\uFF01"
+  m_text: 'Sand fixation:
+
+    Plant Achnatherum splend on the quick sand, and after
+    a period of time, the sandy area will be transformed into a straw square for
+    planting trees.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c262b9461e67cb4e9653335a72becaf, type: 2}
   m_sharedMaterial: {fileID: -3331716886334002538, guid: 1c262b9461e67cb4e9653335a72becaf, type: 2}
@@ -786,166 +618,6 @@ MonoBehaviour:
   colorDefault: {r: 0.8, g: 0.8, b: 0.8, a: 1}
   colorSelected: {r: 0.25, g: 0.65, b: 0.8, a: 1}
   nameLabel: {fileID: 0}
---- !u!1 &2864298941392190344
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7254678307914420283}
-  - component: {fileID: 5285731632919903090}
-  - component: {fileID: 5530586220063862326}
-  - component: {fileID: 8814283269010922557}
-  m_Layer: 5
-  m_Name: First2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &7254678307914420283
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2864298941392190344}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 131155033385157082}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.2520275, y: 12.4}
-  m_SizeDelta: {x: 609.5964, y: 292.17}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &5285731632919903090
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2864298941392190344}
-  m_CullTransparentMesh: 1
---- !u!114 &5530586220063862326
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2864298941392190344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "Game Tutorial: \n\nSection 1: Camera Controls\uFF1A\nCamera Movement -
-    WSAD\nCamera Rotation - Right Mouse Button\n\nSection 2: Game Speed Adjustment\nSpeed
-    Control - Upper Right Button In the upper right corner of the screen, you'll
-    find a button to adjust the game speed. Click on it to toggle between different
-    speed settings\n\nSection 3: Plant Selection\nIn the lower left corner of the
-    screen, you'll find a button to access the plant selection menu. Click on it
-    to open the menu and browse through the available plant options.\n\nSection 4:
-    Fill ratio of mass planting\nIn the lower left corner of the screen, you'll also
-    find a slider to adjust the batch planting density. This feature allows you to
-    modify the density of saplings when engaging in large-scale planting activities."
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1c262b9461e67cb4e9653335a72becaf, type: 2}
-  m_sharedMaterial: {fileID: -3331716886334002538, guid: 1c262b9461e67cb4e9653335a72becaf, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 14.2
-  m_fontSizeBase: 14.2
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: -10.117889, y: 0, z: 0, w: -27.594254}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &8814283269010922557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2864298941392190344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bff080b4e3bae64c80b54402ced6cc6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colorDefault: {r: 0.8, g: 0.8, b: 0.8, a: 1}
-  colorSelected: {r: 0.25, g: 0.65, b: 0.8, a: 1}
-  nameLabel: {fileID: 0}
 --- !u!1 &3536515615531896503
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,18 +685,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Welcome to Tree-Planting Village in Sahanba, Hebei\uFF01\n\nHere, amidst
-    the tranquility, you are tasked with a noble mission - combating the relentless
-    sandstorms through tree planting. At first glance, it may seem like a simple
-    endeavor, but alas, the planting conditions here are far from forgiving.\n\nIn
-    the face of adversity, you will need to employ your expertise in flora and nurture
-    the land with care. Transforming the harsh soil requires a delicate touch, as
-    you select the right plants to breathe life into this arid landscape.\n\nBut
-    that's not all. As you embark on this journey, remember the importance of biodiversity.
-    Nature's harmony lies in the rich tapestry of plant life, and it is your duty
-    to preserve and foster this diversity.\n\nYou hold the power to make a profound
-    impact. The Chinese government and its people will forever remember and honor
-    your contribution to greening the land\uFF01"
+  m_text: 'Salt and alkali absorption:
+
+    Plant Tamarix chinensis on the bottom
+    land, and after a period of time, the salt-alkali land will be transformed into
+    arable land for crop cultivation.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c262b9461e67cb4e9653335a72becaf, type: 2}
   m_sharedMaterial: {fileID: -3331716886334002538, guid: 1c262b9461e67cb4e9653335a72becaf, type: 2}
@@ -1335,18 +1000,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Welcome to Tree-Planting Village in Sahanba, Hebei\uFF01\n\nHere, amidst
-    the tranquility, you are tasked with a noble mission - combating the relentless
-    sandstorms through tree planting. At first glance, it may seem like a simple
-    endeavor, but alas, the planting conditions here are far from forgiving.\n\nIn
-    the face of adversity, you will need to employ your expertise in flora and nurture
-    the land with care. Transforming the harsh soil requires a delicate touch, as
-    you select the right plants to breathe life into this arid landscape.\n\nBut
-    that's not all. As you embark on this journey, remember the importance of biodiversity.
-    Nature's harmony lies in the rich tapestry of plant life, and it is your duty
-    to preserve and foster this diversity.\n\nYou hold the power to make a profound
-    impact. The Chinese government and its people will forever remember and honor
-    your contribution to greening the land\uFF01"
+  m_text: 'Shovel:
+
+    Function 1:
+
+    Remove unwanted plants so that you can redesign
+    your planting plan.
+
+    Function 2:
+
+    When pests occur, you need to immediately
+    remove the diseased plants to prevent the spread of pests.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c262b9461e67cb4e9653335a72becaf, type: 2}
   m_sharedMaterial: {fileID: -3331716886334002538, guid: 1c262b9461e67cb4e9653335a72becaf, type: 2}
@@ -1569,7 +1233,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8125856938468056917}
-  - {fileID: 6744786608333645160}
   m_Father: {fileID: 473877533599157537}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1685,8 +1348,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Text1: {fileID: 2656639572361633612}
-  Text2: {fileID: 1116566349985982206}
-  amount: 2
+  Text2: {fileID: 0}
+  amount: 1
 --- !u!1 &6414153074655025590
 GameObject:
   m_ObjectHideFlags: 0
@@ -1701,7 +1364,7 @@ GameObject:
   - component: {fileID: 6997433094264434650}
   - component: {fileID: 2351371578259913086}
   m_Layer: 5
-  m_Name: "\u79CD\u5B50\u5E93\u6559\u7A0B"
+  m_Name: "\u94F2\u5B50\u6559\u7A0B"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1720,7 +1383,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6085737165342001164}
-  - {fileID: 7254678307914420283}
   m_Father: {fileID: 473877533599157537}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1836,165 +1498,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Text1: {fileID: 4001124400350363428}
-  Text2: {fileID: 2864298941392190344}
-  amount: 2
---- !u!1 &7472287681409253466
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3502015175902544671}
-  - component: {fileID: 991029625271023107}
-  - component: {fileID: 8471111921386316028}
-  - component: {fileID: 1532545779581965313}
-  m_Layer: 5
-  m_Name: First2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &3502015175902544671
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7472287681409253466}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7309494778234735317}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.2520275, y: 12.4}
-  m_SizeDelta: {x: 609.5964, y: 292.17}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &991029625271023107
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7472287681409253466}
-  m_CullTransparentMesh: 1
---- !u!114 &8471111921386316028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7472287681409253466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "Game Tutorial: \n\nSection 1: Camera Controls\uFF1A\nCamera Movement -
-    WSAD\nCamera Rotation - Right Mouse Button\n\nSection 2: Game Speed Adjustment\nSpeed
-    Control - Upper Right Button In the upper right corner of the screen, you'll
-    find a button to adjust the game speed. Click on it to toggle between different
-    speed settings\n\nSection 3: Plant Selection\nIn the lower left corner of the
-    screen, you'll find a button to access the plant selection menu. Click on it
-    to open the menu and browse through the available plant options.\n\nSection 4:
-    Fill ratio of mass planting\nIn the lower left corner of the screen, you'll also
-    find a slider to adjust the batch planting density. This feature allows you to
-    modify the density of saplings when engaging in large-scale planting activities."
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1c262b9461e67cb4e9653335a72becaf, type: 2}
-  m_sharedMaterial: {fileID: -3331716886334002538, guid: 1c262b9461e67cb4e9653335a72becaf, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 14.2
-  m_fontSizeBase: 14.2
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: -10.117889, y: 0, z: 0, w: -27.594254}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &1532545779581965313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7472287681409253466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bff080b4e3bae64c80b54402ced6cc6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colorDefault: {r: 0.8, g: 0.8, b: 0.8, a: 1}
-  colorSelected: {r: 0.25, g: 0.65, b: 0.8, a: 1}
-  nameLabel: {fileID: 0}
+  Text2: {fileID: 0}
+  amount: 1
