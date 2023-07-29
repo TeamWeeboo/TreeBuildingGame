@@ -187,7 +187,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.2520986, y: -13.400007}
+  m_AnchoredPosition: {x: -1.3, y: -24.4}
   m_SizeDelta: {x: 609.5964, y: 292.1687}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9146062543481553966
@@ -262,7 +262,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -349,7 +349,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.2520275, y: -13.400011}
+  m_AnchoredPosition: {x: 4.2520275, y: 12.4}
   m_SizeDelta: {x: 609.5964, y: 292.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3324693821823118240
@@ -380,16 +380,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Game Tutorial: \nSection 1: Camera Controls\uFF1A\nCamera Movement - WSAD\nCamera
-    Rotation - Right Mouse Button\n\nSection 2: Game Speed Adjustment\nSpeed Control
-    - Upper Right Button In the upper right corner of the screen, you'll find a button
-    to adjust the game speed. Click on it to toggle between different speed settings\n\nSection
-    3: Plant Selection\nIn the lower left corner of the screen, you'll find a button
-    to access the plant selection menu. Click on it to open the menu and browse through
-    the available plant options.\n\nSection 4: Fill ratio of mass planting\nIn the
-    lower left corner of the screen, you'll also find a slider to adjust the batch
-    planting density. This feature allows you to modify the density of saplings when
-    engaging in large-scale planting activities."
+  m_text: "Game Tutorial: \n\nSection 1: Camera Controls\uFF1A\nCamera Movement -
+    WSAD\nCamera Rotation - Right Mouse Button\n\nSection 2: Game Speed Adjustment\nSpeed
+    Control - Upper Right Button In the upper right corner of the screen, you'll
+    find a button to adjust the game speed. Click on it to toggle between different
+    speed settings\n\nSection 3: Plant Selection\nIn the lower left corner of the
+    screen, you'll find a button to access the plant selection menu. Click on it
+    to open the menu and browse through the available plant options.\n\nSection 4:
+    Fill ratio of mass planting\nIn the lower left corner of the screen, you'll also
+    find a slider to adjust the batch planting density. This feature allows you to
+    modify the density of saplings when engaging in large-scale planting activities."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c262b9461e67cb4e9653335a72becaf, type: 2}
   m_sharedMaterial: {fileID: -3331716886334002538, guid: 1c262b9461e67cb4e9653335a72becaf, type: 2}
@@ -416,13 +416,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 14.2
+  m_fontSizeBase: 14.2
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -452,7 +452,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -10.117889, y: 0, z: 0, w: -27.594254}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -506,7 +506,7 @@ RectTransform:
   m_Children:
   - {fileID: 5177612130767636033}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
