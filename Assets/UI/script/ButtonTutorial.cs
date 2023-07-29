@@ -12,7 +12,7 @@ public class ButtonTutorial : MonoBehaviour
     }
 
     public void ShowTutorial(){
-
+        Time.timeScale = (0);
         tutorial.SetActive(true);
         Destroy(this);
    }
