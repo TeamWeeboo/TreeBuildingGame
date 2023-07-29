@@ -27,7 +27,7 @@ MonoBehaviour:
     - key: {fileID: 11400000, guid: eaef79c5d8943a34093270a59f33a995, type: 2}
       value: 0.7
   <cost>k__BackingField: 12
-  <coverageContribution>k__BackingField: 4
+  <coverageContribution>k__BackingField: 1
   <economics>k__BackingField: 0
   <diseaseThreshold>k__BackingField: 040000000800000010000000
   <diseaseSpreadChance>k__BackingField: 0.4
