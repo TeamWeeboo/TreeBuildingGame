@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4789248608120923220}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1522.5701, y: 32.95, z: 1569.81}
-  m_LocalScale: {x: 2400, y: 2570, z: 1}
+  m_LocalPosition: {x: 1447.4, y: 32.95, z: 1466.9}
+  m_LocalScale: {x: 1830, y: 2140, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6132640078219411984}
@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0205451ac81366408f25d76fe382877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <size>k__BackingField: {x: 239, y: 256}
+  <size>k__BackingField: {x: 182, y: 213}
   <spacing>k__BackingField: 10
-  startPositionOffset: {x: 327.57, y: 32.7, z: 289.81}
+  startPositionOffset: {x: 537.4, y: 32.7, z: 401.9}
   gridRenderer: {fileID: 6390475039456360693}

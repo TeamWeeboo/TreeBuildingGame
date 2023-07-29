@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
+using UnityEditor.PackageManager.UI;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -13,9 +14,29 @@ namespace Gameplay.Placement {
 		[SerializeField] Vector3 startPositionOffset;
 		[SerializeField] Renderer gridRenderer;
 
+		bool[,] isPlantable;
+		Terrain terrain;
+
 		public static GridObject instance;
 
 		public GridElement[,] datas = null;
+
+		bool inited;
+		public void Init() {
+			terrain=GetComponent<Terrain>();
+			if(inited) return;
+			inited= true;
+			isPlantable=new bool[size.x,size.y];
+			float startY = transform.position.y+startPositionOffset.y;
+			for(int x = 0;x<size.x;x++) {
+				for(int y = 0;y<size.y;y++) {
+					Vector3 position = GetGridPosition(new Vector2Int(x,y));
+					float terrainHeight = transform.position.y+terrain.SampleHeight(position);
+					bool canPlantHere = terrainHeight<=startY+0.25f;
+					isPlantable[x,y]=canPlantHere;
+				}
+			}
+		}
 
 		private void Awake() {
 			instance=this;
@@ -23,6 +44,7 @@ namespace Gameplay.Placement {
 
 		private void Start() {
 			datas=new GridElement[size.x,size.y];
+			Init();
 			gridRenderer.material.mainTextureScale=new Vector2(1,1);
 			UpdateGridRenderer();
 		}
@@ -73,7 +95,6 @@ namespace Gameplay.Placement {
 
 		public GridElement GetElement(Vector2Int index) {
 			if(IsIndexOOB(index)) return null;
-
 			if(datas[index.x,index.y]==null) {
 				datas[index.x,index.y]=new GridElement();
 				datas[index.x,index.y].Init(index);
@@ -83,7 +104,7 @@ namespace Gameplay.Placement {
 
 		public GridElement GetElement(Vector3 position) => GetElement(GetGridIndex(position));
 
-		public bool IsIndexOOB(Vector2Int index) => index.x>=size.x||index.y>=size.y||index.x<0||index.y<0;
+		public bool IsIndexOOB(Vector2Int index) => index.x>=size.x||index.y>=size.y||index.x<0||index.y<0||!isPlantable[index.x,index.y];
 
 	}
 

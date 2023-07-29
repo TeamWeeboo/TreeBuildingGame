@@ -43,6 +43,8 @@ namespace Gameplay.Placement {
 					isDragging=true;
 				}
 
+				Debug.Log(GridObject.instance.GetElement(mouseOverPosition));
+
 				if(isDragging&&!Input.GetMouseButton(0)) {
 					isDragging=false;
 

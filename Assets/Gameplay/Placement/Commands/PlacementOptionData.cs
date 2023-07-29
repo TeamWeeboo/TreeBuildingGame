@@ -13,19 +13,20 @@ namespace Gameplay.Placement {
 
 		[SerializeField] GameObject previewAreaPrefab;
 		[SerializeField] Material _previewMaterial;
-		public readonly static Dictionary<string,CommandData> datas = new Dictionary<string,CommandData>();
+		public readonly static HashSet<CommandData> datas = new HashSet<CommandData>();
 		protected static GameObject previewAreaDisplay;
 		protected static Material previewAreaMaterial;
 		protected static Material previewMaterial;
 
 		public virtual void UpdateCommand(GridElement instance) { }
 		protected virtual void OnEnable() {
-			datas.Add(name,this);
+
+			datas.Add(this);
 			if(_previewMaterial!=null&&previewAreaDisplay==null) previewMaterial=_previewMaterial;
 		}
 		public virtual void DoPreview(Vector2Int start,Vector2Int end,bool doPreview) {
 			foreach(var i in datas) {
-				if(i.Value!=this) i.Value.EndPreview();
+				if(i!=this) i.EndPreview();
 			}
 			if(!doPreview) {
 				EndPreview();

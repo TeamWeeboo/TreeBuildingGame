@@ -22,10 +22,11 @@ namespace Gameplay.Progression {
 		private void Start() {
 			instance=this;
 			GridObject gridObject = GridObject.instance;
+			gridObject.Init();
 
 			for(int i = 0;i<gridObject.size.x;i++)
 				for(int j = 0;j<gridObject.size.y;j++) {
-					gridObject.GetElement(new Vector2Int(i,j)).PlaceTile(tileBase);
+					gridObject.GetElement(new Vector2Int(i,j))?.PlaceTile(tileBase);
 				}
 
 			#region PlaceSpread
@@ -37,7 +38,7 @@ namespace Gameplay.Progression {
 
 				for(int x = Mathf.Max(0,center.x-radius);x<Mathf.Min(gridObject.size.x,center.x+radius+1);x++) {
 					for(int y = Mathf.Max(0,center.y-radius);y<Mathf.Min(gridObject.size.y,center.y+radius+1);y++) {
-						if(gridObject.GetElement(new Vector2Int(x,y)).placedTileController.prefab==tileSpread.prefab) {
+						if(gridObject.GetElement(new Vector2Int(x,y))?.placedTileController.prefab==tileSpread.prefab) {
 							canAdd=false;
 							break;
 						}
@@ -51,32 +52,32 @@ namespace Gameplay.Progression {
 					for(int y = Mathf.Max(0,center.y-radius);y<Mathf.Min(gridObject.size.y,center.y+radius+1);y++) {
 						Vector2Int position = new Vector2Int(x,y);
 						if((center-position).sqrMagnitude>radius*radius) continue;
-						gridObject.GetElement(position).PlaceTile(tileSpread);
+						gridObject.GetElement(position)?.PlaceTile(tileSpread);
 					}
 			}
 
 			for(int i = 0;i<spreadExtensionCountMax;i++) {
 				Vector2Int center = new Vector2Int(Random.Range(0,gridObject.size.x),Random.Range(0,gridObject.size.y));
 				int radius = Random.Range(spreadExtensionRadiusRange.x,spreadExtensionRadiusRange.y);
-				bool canAdd = gridObject.GetElement(center).placedTileController.prefab==tileSpread.prefab;
-				
+				bool canAdd = gridObject.GetElement(center)?.placedTileController.prefab==tileSpread.prefab;
+
 				for(int x = Mathf.Max(0,center.x-radius);x<Mathf.Min(gridObject.size.x,center.x+radius+1);x++) {
 					for(int y = Mathf.Max(0,center.y-radius);y<Mathf.Min(gridObject.size.y,center.y+radius+1);y++) {
-						if(gridObject.GetElement(new Vector2Int(x,y)).placedTileController.prefab==tileSpread.prefab) {
+						if(gridObject.GetElement(new Vector2Int(x,y))?.placedTileController.prefab==tileSpread.prefab) {
 							canAdd=true;
 							break;
 						}
 					}
 					if(canAdd) break;
 				}
-				
+
 				if(!canAdd) continue;
 
 				for(int x = Mathf.Max(0,center.x-radius);x<Mathf.Min(gridObject.size.x,center.x+radius+1);x++)
 					for(int y = Mathf.Max(0,center.y-radius);y<Mathf.Min(gridObject.size.y,center.y+radius+1);y++) {
 						Vector2Int position = new Vector2Int(x,y);
 						if((center-position).sqrMagnitude>radius*radius) continue;
-						gridObject.GetElement(position).PlaceTile(tileSpread);
+						gridObject.GetElement(position)?.PlaceTile(tileSpread);
 					}
 			}
 
@@ -90,7 +91,7 @@ namespace Gameplay.Progression {
 
 				for(int x = Mathf.Max(0,center.x-radius);x<Mathf.Min(gridObject.size.x,center.x+radius+1);x++) {
 					for(int y = Mathf.Max(0,center.y-radius);y<Mathf.Min(gridObject.size.y,center.y+radius+1);y++) {
-						if(gridObject.GetElement(new Vector2Int(x,y)).placedTileController.prefab==tileSpread2.prefab) {
+						if(gridObject.GetElement(new Vector2Int(x,y))?.placedTileController.prefab==tileSpread2.prefab) {
 							canAdd=false;
 							break;
 						}
@@ -104,18 +105,18 @@ namespace Gameplay.Progression {
 					for(int y = Mathf.Max(0,center.y-radius);y<Mathf.Min(gridObject.size.y,center.y+radius+1);y++) {
 						Vector2Int position = new Vector2Int(x,y);
 						if((center-position).sqrMagnitude>radius*radius) continue;
-						gridObject.GetElement(position).PlaceTile(tileSpread2);
+						gridObject.GetElement(position)?.PlaceTile(tileSpread2);
 					}
 			}
 
 			for(int i = 0;i<spreadExtensionCountMax;i++) {
 				Vector2Int center = new Vector2Int(Random.Range(0,gridObject.size.x),Random.Range(0,gridObject.size.y));
 				int radius = Random.Range(spreadExtensionRadiusRange.x,spreadExtensionRadiusRange.y);
-				bool canAdd = gridObject.GetElement(center).placedTileController.prefab==tileSpread2.prefab;
+				bool canAdd = gridObject.GetElement(center)?.placedTileController.prefab==tileSpread2.prefab;
 
 				for(int x = Mathf.Max(0,center.x-radius);x<Mathf.Min(gridObject.size.x,center.x+radius+1);x++) {
 					for(int y = Mathf.Max(0,center.y-radius);y<Mathf.Min(gridObject.size.y,center.y+radius+1);y++) {
-						if(gridObject.GetElement(new Vector2Int(x,y)).placedTileController.prefab==tileSpread2.prefab) {
+						if(gridObject.GetElement(new Vector2Int(x,y))?.placedTileController.prefab==tileSpread2.prefab) {
 							canAdd=true;
 							break;
 						}
@@ -129,7 +130,7 @@ namespace Gameplay.Progression {
 					for(int y = Mathf.Max(0,center.y-radius);y<Mathf.Min(gridObject.size.y,center.y+radius+1);y++) {
 						Vector2Int position = new Vector2Int(x,y);
 						if((center-position).sqrMagnitude>radius*radius) continue;
-						gridObject.GetElement(position).PlaceTile(tileSpread2);
+						gridObject.GetElement(position)?.PlaceTile(tileSpread2);
 					}
 			}
 
