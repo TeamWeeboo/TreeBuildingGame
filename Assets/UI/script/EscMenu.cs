@@ -33,4 +33,8 @@ public class EscMenu : MonoBehaviour
         MenuKey = false;
         Time.timeScale = (0);
     }
+    public void QuitGame(){
+        Application.Quit();
+        UnityEditor.EditorApplication.isPlaying = false;
+    }
 }
