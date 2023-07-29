@@ -57,6 +57,7 @@ namespace Gameplay.Placement {
 								var targetElement = GridObject.instance.GetElement(indexHere);
 								if(targetElement!=null&commandData.CanPlace(indexHere)) {
 									fillT+=Random.Range(fillRatio*0.5f,fillRatio*1.5f);
+									if(commandData is RemoveCommand) fillT+=1;
 									if(fillT<=0) continue;
 									fillT-=1;
 									Game.instance.money-=commandData.cost;
