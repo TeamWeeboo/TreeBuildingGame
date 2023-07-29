@@ -11,8 +11,8 @@ public class DetailsText : MonoBehaviour
 {
     private TextMeshProUGUI Text;
     public TreeData Data;
-    private int GreenHigh = 3;
-    private int GreenMid = 2;
+    private int GreenHigh = 10;
+    private int GreenMid = 4;
     private int GreenLow = 1;
     private string Green;
     

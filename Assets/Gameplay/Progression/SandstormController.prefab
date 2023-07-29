@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5881578865013128741
 RectTransform:
   m_ObjectHideFlags: 0
@@ -598,11 +598,11 @@ MonoBehaviour:
   <difficultyList>k__BackingField:
   - 100
   - 500
-  - 1200
-  rewardSuccessList: 64000000f4010000e803000004000000
-  rewardFailList: 32000000fa000000f401000007000000
-  sandstormInterval: 180
-  sandstormDuration: 40
+  - 1000
+  rewardSuccessList: c8000000e8030000d007000004000000
+  rewardFailList: c8000000e8030000d007000007000000
+  sandstormInterval: 240
+  sandstormDuration: 60
   sandstormVolumes:
   - {fileID: 7924378152419849437}
   - {fileID: 8951772008902466894}
@@ -641,7 +641,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1583842104932620090
 RectTransform:
   m_ObjectHideFlags: 0
@@ -867,7 +867,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3452791447275515468
 RectTransform:
   m_ObjectHideFlags: 0
@@ -906,7 +906,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5593520012307559177
 RectTransform:
   m_ObjectHideFlags: 0
@@ -947,7 +947,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4806031154374352239
 RectTransform:
   m_ObjectHideFlags: 0
