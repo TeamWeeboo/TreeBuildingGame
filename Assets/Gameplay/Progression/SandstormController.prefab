@@ -355,7 +355,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!114 &8070657999967092049
 MonoBehaviour:
@@ -596,9 +596,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <difficultyList>k__BackingField:
-  - 500
-  - 2000
-  - 5000
+  - 600
+  - 3000
+  - 6000
   rewardSuccessList: c8000000e8030000d007000004000000
   rewardFailList: 64000000f4010000e803000007000000
   sandstormInterval: 240
