@@ -86046,42 +86046,6 @@ PrefabInstance:
       propertyPath: Text
       value: 
       objectReference: {fileID: 1970699138}
-    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: rewardFailList.Array.data[0]
-      value: 3000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: rewardFailList.Array.data[1]
-      value: 15000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: rewardFailList.Array.data[2]
-      value: 30000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: rewardSuccessList.Array.data[0]
-      value: 2000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: rewardSuccessList.Array.data[1]
-      value: 10000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: rewardSuccessList.Array.data[2]
-      value: 20000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: <difficultyList>k__BackingField.Array.data[0]
-      value: 2000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: <difficultyList>k__BackingField.Array.data[1]
-      value: 15000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
-      propertyPath: <difficultyList>k__BackingField.Array.data[2]
-      value: 45000
-      objectReference: {fileID: 0}
     - target: {fileID: 9176913080226733561, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
       propertyPath: m_RootOrder
       value: 6
