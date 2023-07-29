@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 7868.086, g: 6060.9067, b: 4317.403, a: 1}
+  m_IndirectSpecularColor: {r: 7512.0903, g: 5501.311, b: 3385.895, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -86046,6 +86046,30 @@ PrefabInstance:
       propertyPath: Text
       value: 
       objectReference: {fileID: 1970699138}
+    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
+      propertyPath: rewardFailList.Array.data[0]
+      value: 3000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
+      propertyPath: rewardFailList.Array.data[1]
+      value: 15000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
+      propertyPath: rewardFailList.Array.data[2]
+      value: 30000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
+      propertyPath: rewardSuccessList.Array.data[0]
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
+      propertyPath: rewardSuccessList.Array.data[1]
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
+      propertyPath: rewardSuccessList.Array.data[2]
+      value: 20000
+      objectReference: {fileID: 0}
     - target: {fileID: 5001719215446778301, guid: 734dc6be42fbf3b458a1e0ef6e6192b5, type: 3}
       propertyPath: <difficultyList>k__BackingField.Array.data[0]
       value: 2000
