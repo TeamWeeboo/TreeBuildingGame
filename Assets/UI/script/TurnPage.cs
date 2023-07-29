@@ -10,6 +10,11 @@ public class TurnPage : MonoBehaviour
     public int amount = 1;
     private int page = 1;
 
+    private void Awake() {
+        Text2.SetActive(false);
+        Text1.SetActive(true);
+    }
+
 
 
     public void Turn(){

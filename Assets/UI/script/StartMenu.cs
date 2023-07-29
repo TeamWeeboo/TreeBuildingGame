@@ -11,7 +11,7 @@ public class StartMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void Quit(){
+    public void QuitGame(){
         Application.Quit();
         UnityEditor.EditorApplication.isPlaying = false;
     }

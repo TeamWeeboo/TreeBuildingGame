@@ -27,6 +27,10 @@ public class SeedLibrary : MonoBehaviour
     public TreeData YuMi;
     public TreeData XiangRiKui;
     public CommandData DeletButton;
+    
+    private void Awake() {
+        PlacementController.instance.commandData = DeletButton;
+    }
 
 
 
@@ -49,7 +53,6 @@ public class SeedLibrary : MonoBehaviour
         Sort3.SetActive(false);
         Sort4.SetActive(false);
         Sorts.SetActive(false);
-        PlacementController.instance.commandData = null;
     }
 
 
