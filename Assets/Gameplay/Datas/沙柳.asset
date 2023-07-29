@@ -26,11 +26,11 @@ MonoBehaviour:
       value: 0.2
     - key: {fileID: 11400000, guid: eaef79c5d8943a34093270a59f33a995, type: 2}
       value: 0.8
-  <cost>k__BackingField: 1
+  <cost>k__BackingField: 10
   <coverageContribution>k__BackingField: 6
-  <economics>k__BackingField: 0.2
+  <economics>k__BackingField: 0.1
   <diseaseThreshold>k__BackingField: 02000000050000000a000000
   <diseaseSpreadChance>k__BackingField: 2
-  <diseaseTime>k__BackingField: 60
+  <diseaseTime>k__BackingField: 30
   diseaseCreationFrequencyMultiplier: 1
   diseaseCreationMaxAttempts: 200

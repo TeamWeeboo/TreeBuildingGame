@@ -28,8 +28,9 @@ MonoBehaviour:
       value: 0
   <cost>k__BackingField: 1
   <coverageContribution>k__BackingField: 1
-  <economics>k__BackingField: 1
+  <economics>k__BackingField: 0
   <diseaseThreshold>k__BackingField: 010000000100000001000000
   <diseaseSpreadChance>k__BackingField: 0.4
   <diseaseTime>k__BackingField: 10
   diseaseCreationFrequencyMultiplier: 1000
+  diseaseCreationMaxAttempts: 0
