@@ -73,6 +73,7 @@ namespace Gameplay.Placement {
 					var targetElement = GridObject.instance.GetElement(indexHere);
 					if(targetElement!=null&CanPlace(indexHere)) {
 						fillT+=fillRatio;
+
 						if(fillT<1) continue;
 						fillT-=1;
 						totalCost+=cost;

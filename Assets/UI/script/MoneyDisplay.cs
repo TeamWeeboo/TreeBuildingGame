@@ -14,7 +14,7 @@ public class MoneyDisplay:MonoBehaviour {
 	private void Update() {
 		textCost.text=$"{PlacementController.instance.commandData.cost}¥";
 		textMoney.text=$"{Game.instance.money} ¥";
-		textCoverage.text=$"{TreeGrowth.totalCoverage} / "+
+		textCoverage.text=$"{Mathf.RoundToInt(TreeGrowth.totalCoverage)} / "+
 		$"{SandstormController.instance.difficultyList[SandstormController.instance.currentDifficulty]} ";
 	}
 }
