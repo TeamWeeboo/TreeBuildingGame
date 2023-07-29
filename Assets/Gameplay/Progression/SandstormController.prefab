@@ -596,11 +596,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <difficultyList>k__BackingField:
-  - 600
-  - 3000
-  - 6000
-  rewardSuccessList: c8000000e8030000d007000004000000
-  rewardFailList: 64000000f4010000e803000007000000
+  - 2000
+  - 15000
+  - 45000
+  rewardSuccessList: d007000010270000204e000004000000
+  rewardFailList: b80b0000983a00003075000007000000
   sandstormInterval: 240
   sandstormDuration: 60
   sandstormVolumes:
