@@ -31,6 +31,6 @@ MonoBehaviour:
   <economics>k__BackingField: -0.5
   <diseaseThreshold>k__BackingField: 060000000c00000018000000
   <diseaseSpreadChance>k__BackingField: 0.7
-  <diseaseTime>k__BackingField: 20
+  <diseaseTime>k__BackingField: 15
   diseaseCreationFrequencyMultiplier: 2
   diseaseCreationMaxAttempts: 200
