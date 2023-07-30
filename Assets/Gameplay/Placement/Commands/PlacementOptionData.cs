@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
-using UnityEditor;
 using UnityEngine;
 using CULU;
 using Gameplay.Progression;
@@ -20,9 +19,14 @@ namespace Gameplay.Placement {
 
 		public virtual void UpdateCommand(GridElement instance) { }
 		protected virtual void OnEnable() {
-
 			datas.Add(this);
 			if(_previewMaterial!=null&&previewAreaDisplay==null) previewMaterial=_previewMaterial;
+		}
+		public static void InitStatic(Material previewMaterial,GameObject previewAreaPrefab) {
+			CommandData.previewMaterial=previewMaterial;
+			previewAreaDisplay=Instantiate(previewAreaPrefab);
+			previewAreaMaterial=previewAreaDisplay.GetComponent<Renderer>().material;
+			previewAreaDisplay.SetActive(false);
 		}
 		public virtual void DoPreview(Vector2Int start,Vector2Int end,bool doPreview) {
 			foreach(var i in datas) {
@@ -32,7 +36,7 @@ namespace Gameplay.Placement {
 				EndPreview();
 				previewAreaDisplay?.SetActive(false);
 			} else {
-				if(previewAreaDisplay==null) {
+				if(previewAreaDisplay==null&&previewAreaPrefab!=null) {
 					previewAreaDisplay=Instantiate(previewAreaPrefab);
 					previewAreaMaterial=previewAreaDisplay.GetComponent<Renderer>().material;
 				}
@@ -43,10 +47,11 @@ namespace Gameplay.Placement {
 				bool isSingleTile = startPosition==endPosition;
 				startPosition+=new Vector3(-0.5f,0,-0.5f)*GridObject.instance.spacing;
 				endPosition+=new Vector3(0.5f,0,0.5f)*GridObject.instance.spacing;
-				previewAreaDisplay.transform.position=(startPosition+endPosition)*0.5f;
-				previewAreaDisplay.transform.localScale=new Vector3(endPosition.x-startPosition.x,0.3f,endPosition.z-startPosition.z);
-				previewAreaDisplay?.SetActive(!isSingleTile);
-
+				if(previewAreaDisplay) {
+					previewAreaDisplay.transform.position=(startPosition+endPosition)*0.5f;
+					previewAreaDisplay.transform.localScale=new Vector3(endPosition.x-startPosition.x,0.3f,endPosition.z-startPosition.z);
+					previewAreaDisplay.SetActive(!isSingleTile);
+				}
 				return;
 			}
 
