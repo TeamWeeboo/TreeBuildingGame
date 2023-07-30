@@ -30,6 +30,7 @@ public class SeedLibrary : MonoBehaviour
     
     private void Awake() {
         PlacementController.instance.commandData = DeletButton;
+        Debug.Log($"{DeletButton.name}");
     }
 
 

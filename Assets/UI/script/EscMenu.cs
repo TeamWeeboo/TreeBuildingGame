@@ -35,6 +35,5 @@ public class EscMenu : MonoBehaviour
     }
     public void QuitGame(){
         Application.Quit();
-        UnityEditor.EditorApplication.isPlaying = false;
     }
 }

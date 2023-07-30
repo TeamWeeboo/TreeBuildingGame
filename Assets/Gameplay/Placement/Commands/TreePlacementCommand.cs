@@ -3,7 +3,6 @@ using Gameplay.Progression;
 using Gameplay.Simulation;
 using System.Collections;
 using System.Collections.Generic;
-using TreeEditor;
 using UnityEngine;
 
 namespace Gameplay.Placement {

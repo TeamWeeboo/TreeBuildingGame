@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4159270205195183871}
   - component: {fileID: 5171680410462998302}
   - component: {fileID: 5295953895062809139}
-  - component: {fileID: 3857000084693119219}
+  - component: {fileID: 5125692326897932265}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5125692326897932265}
         m_TargetAssemblyTypeName: EscMenu, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -135,7 +135,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &3857000084693119219
+--- !u!114 &5125692326897932265
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,9 +144,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5114561167744951691}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b4e8431a18e49f47917c986878db8a4, type: 3}
+  m_Script: {fileID: 11500000, guid: cdd2fbfca2d9c91438d7b3422fe6eac9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Menu: {fileID: 5517797765079533108}
 --- !u!1 &5517797765079533108
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,7 +166,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2124875003154482008
 RectTransform:
   m_ObjectHideFlags: 0
@@ -182,7 +183,7 @@ RectTransform:
   - {fileID: 371475276093718240}
   - {fileID: 5458233451019598085}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -210,7 +211,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!114 &7108262396516995261
 MonoBehaviour:
@@ -399,6 +400,7 @@ GameObject:
   - component: {fileID: 8853027211699822645}
   - component: {fileID: 3605823633237214123}
   - component: {fileID: 4242150521346041877}
+  - component: {fileID: 8559590558509719615}
   m_Layer: 5
   m_Name: Return
   m_TagString: Untagged
@@ -509,7 +511,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8559590558509719615}
         m_TargetAssemblyTypeName: EscMenu, Assembly-CSharp
         m_MethodName: Return
         m_Mode: 1
@@ -521,6 +523,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &8559590558509719615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7585775846123542520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdd2fbfca2d9c91438d7b3422fe6eac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Menu: {fileID: 5517797765079533108}
 --- !u!1 &7683315077638334750
 GameObject:
   m_ObjectHideFlags: 0
