@@ -122,7 +122,8 @@ namespace Gameplay.Placement {
 		public void AddCommand(CommandData newCommand) {
 			currentCommand=newCommand;
 			timeAfterCommand=0;
-		}
+            newCommand.UpdateCommand(this);
+        }
 		public void PlaceObject(TreeData treeData) {
 			this.treeData=treeData;
 			GameObject prefab = treeData?.prefab;

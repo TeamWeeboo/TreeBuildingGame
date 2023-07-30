@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 7765.968, g: 5991.02, b: 4367.0356, a: 1}
+  m_IndirectSpecularColor: {r: 7363.1475, g: 5382.2456, b: 3372.3813, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -92128,6 +92128,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: SeedLibraryMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 5088081075345284504, guid: 38893ca8d640d504b93561abf9962933, type: 3}
+      propertyPath: DeletButton
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5088081075345284504, guid: 38893ca8d640d504b93561abf9962933, type: 3}
+      propertyPath: previewMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: cc95290e604f8114cbfd985605d4600b, type: 2}
+    - target: {fileID: 5088081075345284504, guid: 38893ca8d640d504b93561abf9962933, type: 3}
+      propertyPath: previewAreaObject
+      value: 
+      objectReference: {fileID: 2799204760622206865, guid: f93e8fc6d0f595a44aebc77d5aa8639e, type: 3}
     - target: {fileID: 5845677242229834058, guid: 38893ca8d640d504b93561abf9962933, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
